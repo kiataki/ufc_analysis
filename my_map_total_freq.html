@@ -1,0 +1,3561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7cd9ccf632ef2b3e42812cc80a5360ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7cd9ccf632ef2b3e42812cc80a5360ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7cd9ccf632ef2b3e42812cc80a5360ed = L.map(
+                "map_7cd9ccf632ef2b3e42812cc80a5360ed",
+                {
+                    center: [29.594938277710853, -42.47136388494331],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb33fbed053c3666065a7669dac05d1f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+            var circle_marker_cd2fc32d8e6934ae5aa06125c21c730e = L.circleMarker(
+                [24.4538352, 54.3774014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 3.925, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3.14}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_45f3c0e61c3c13d1336c978ce65c8edf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4767e3dad6f5030ec71018ba01633cb = $(`<div id="html_d4767e3dad6f5030ec71018ba01633cb" style="width: 100.0%; height: 100.0%;">Abu Dhabi, Abu Dhabi, United Arab Emirates</div>`)[0];
+                popup_45f3c0e61c3c13d1336c978ce65c8edf.setContent(html_d4767e3dad6f5030ec71018ba01633cb);
+            
+        
+
+        circle_marker_cd2fc32d8e6934ae5aa06125c21c730e.bindPopup(popup_45f3c0e61c3c13d1336c978ce65c8edf)
+        ;
+
+        
+    
+    
+            var circle_marker_e47b5f3f3f15c8eb022edb1c3f262c35 = L.circleMarker(
+                [24.4538352, 54.3774014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.45, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.36}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_70f42cabeff8f3fa97ae63ed99fd9e55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62474ca491f179ef83b2e1c518eae577 = $(`<div id="html_62474ca491f179ef83b2e1c518eae577" style="width: 100.0%; height: 100.0%;">Abu Dhabi, United Arab Emirates</div>`)[0];
+                popup_70f42cabeff8f3fa97ae63ed99fd9e55.setContent(html_62474ca491f179ef83b2e1c518eae577);
+            
+        
+
+        circle_marker_e47b5f3f3f15c8eb022edb1c3f262c35.bindPopup(popup_70f42cabeff8f3fa97ae63ed99fd9e55)
+        ;
+
+        
+    
+    
+            var circle_marker_2f302b39d23a3bcce5488be96199a825 = L.circleMarker(
+                [-34.9281805, 138.5999312],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ca26e679afacba45a172da8a929b9955 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3337126fb3419fbd2614e24cd2e1a5b5 = $(`<div id="html_3337126fb3419fbd2614e24cd2e1a5b5" style="width: 100.0%; height: 100.0%;">Adelaide, South Australia, Australia</div>`)[0];
+                popup_ca26e679afacba45a172da8a929b9955.setContent(html_3337126fb3419fbd2614e24cd2e1a5b5);
+            
+        
+
+        circle_marker_2f302b39d23a3bcce5488be96199a825.bindPopup(popup_ca26e679afacba45a172da8a929b9955)
+        ;
+
+        
+    
+    
+            var circle_marker_02ef07cdf9e5f83ab0e42cd01fdcf810 = L.circleMarker(
+                [42.6511674, -73.754968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2da1df8dbf5f58e1e5a4f3249335d5a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e3b6312996cc4ab83a369e6bdd0bd4 = $(`<div id="html_97e3b6312996cc4ab83a369e6bdd0bd4" style="width: 100.0%; height: 100.0%;">Albany, New York, USA</div>`)[0];
+                popup_2da1df8dbf5f58e1e5a4f3249335d5a7.setContent(html_97e3b6312996cc4ab83a369e6bdd0bd4);
+            
+        
+
+        circle_marker_02ef07cdf9e5f83ab0e42cd01fdcf810.bindPopup(popup_2da1df8dbf5f58e1e5a4f3249335d5a7)
+        ;
+
+        
+    
+    
+            var circle_marker_14de5e30929e62b6981137e08d18d472 = L.circleMarker(
+                [35.0841034, -106.650985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c7a57ce8e422b3de0d814e9c15b5ce36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa5e0db9b2f371d056de07e8cba6a3c6 = $(`<div id="html_fa5e0db9b2f371d056de07e8cba6a3c6" style="width: 100.0%; height: 100.0%;">Albuquerque, New Mexico, USA</div>`)[0];
+                popup_c7a57ce8e422b3de0d814e9c15b5ce36.setContent(html_fa5e0db9b2f371d056de07e8cba6a3c6);
+            
+        
+
+        circle_marker_14de5e30929e62b6981137e08d18d472.bindPopup(popup_c7a57ce8e422b3de0d814e9c15b5ce36)
+        ;
+
+        
+    
+    
+            var circle_marker_357e267d2e896fc8a39b25449303feee = L.circleMarker(
+                [33.8347516, -117.911732],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.68}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6df845ad16dbc4506203e7edc6b33e85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4ae81574b4b1a4e99257959f97ec25b = $(`<div id="html_e4ae81574b4b1a4e99257959f97ec25b" style="width: 100.0%; height: 100.0%;">Anaheim, California, USA</div>`)[0];
+                popup_6df845ad16dbc4506203e7edc6b33e85.setContent(html_e4ae81574b4b1a4e99257959f97ec25b);
+            
+        
+
+        circle_marker_357e267d2e896fc8a39b25449303feee.bindPopup(popup_6df845ad16dbc4506203e7edc6b33e85)
+        ;
+
+        
+    
+    
+            var circle_marker_afe2fa13e5ed7bb6e9e3e41e36c5a656 = L.circleMarker(
+                [33.7489924, -84.3902644],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.125, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.9}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a675df4e0fcff2772e3a6ed5815b684e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7332ebe3adf89e10c436bf20d149bd6 = $(`<div id="html_b7332ebe3adf89e10c436bf20d149bd6" style="width: 100.0%; height: 100.0%;">Atlanta, Georgia, USA</div>`)[0];
+                popup_a675df4e0fcff2772e3a6ed5815b684e.setContent(html_b7332ebe3adf89e10c436bf20d149bd6);
+            
+        
+
+        circle_marker_afe2fa13e5ed7bb6e9e3e41e36c5a656.bindPopup(popup_a675df4e0fcff2772e3a6ed5815b684e)
+        ;
+
+        
+    
+    
+            var circle_marker_c32de91cdd8372430fa6b1d80ee9d0e0 = L.circleMarker(
+                [39.3642852, -74.4229351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.6}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c80917779f96c0f1c51f238c929ac926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_346083d0a71b7f23fcbde1a417dc4c41 = $(`<div id="html_346083d0a71b7f23fcbde1a417dc4c41" style="width: 100.0%; height: 100.0%;">Atlantic City, New Jersey, USA</div>`)[0];
+                popup_c80917779f96c0f1c51f238c929ac926.setContent(html_346083d0a71b7f23fcbde1a417dc4c41);
+            
+        
+
+        circle_marker_c32de91cdd8372430fa6b1d80ee9d0e0.bindPopup(popup_c80917779f96c0f1c51f238c929ac926)
+        ;
+
+        
+    
+    
+            var circle_marker_54a6adc129d82fa6da6fe7e01fa8bab9 = L.circleMarker(
+                [42.6875323, -83.2341028],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a89b9aa3b1a53dd958e8fe5b177a1770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fbe8aef1f1e5375a02d9a8752dce78b = $(`<div id="html_6fbe8aef1f1e5375a02d9a8752dce78b" style="width: 100.0%; height: 100.0%;">Auburn Hills, Michigan, USA</div>`)[0];
+                popup_a89b9aa3b1a53dd958e8fe5b177a1770.setContent(html_6fbe8aef1f1e5375a02d9a8752dce78b);
+            
+        
+
+        circle_marker_54a6adc129d82fa6da6fe7e01fa8bab9.bindPopup(popup_a89b9aa3b1a53dd958e8fe5b177a1770)
+        ;
+
+        
+    
+    
+            var circle_marker_f7f4492382f120e7bc224274a2c7b2cc = L.circleMarker(
+                [-36.852095, 174.7631803],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.825, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.66}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_8b8caf53ce2e7e14eb5cf116745285e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0689a945a232fbb0f405253bff415037 = $(`<div id="html_0689a945a232fbb0f405253bff415037" style="width: 100.0%; height: 100.0%;">Auckland, New Zealand</div>`)[0];
+                popup_8b8caf53ce2e7e14eb5cf116745285e4.setContent(html_0689a945a232fbb0f405253bff415037);
+            
+        
+
+        circle_marker_f7f4492382f120e7bc224274a2c7b2cc.bindPopup(popup_8b8caf53ce2e7e14eb5cf116745285e4)
+        ;
+
+        
+    
+    
+            var circle_marker_f4f54c3fbab0242beddb91fa0e0a6f18 = L.circleMarker(
+                [33.4709714, -81.9748429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.375, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.3}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6d1449f7b635efb5b0d213aa9d680654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_460a3c48982317d6fff1d6dbe7a99ded = $(`<div id="html_460a3c48982317d6fff1d6dbe7a99ded" style="width: 100.0%; height: 100.0%;">Augusta, Georgia, USA</div>`)[0];
+                popup_6d1449f7b635efb5b0d213aa9d680654.setContent(html_460a3c48982317d6fff1d6dbe7a99ded);
+            
+        
+
+        circle_marker_f4f54c3fbab0242beddb91fa0e0a6f18.bindPopup(popup_6d1449f7b635efb5b0d213aa9d680654)
+        ;
+
+        
+    
+    
+            var circle_marker_a75b485e1e7489c46b0fea12f94f1eb9 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.68}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_4ea6b5fc6316dfa1e09a4c1323ad6af8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0fa104952a6acccebe781fbd51cdd72 = $(`<div id="html_d0fa104952a6acccebe781fbd51cdd72" style="width: 100.0%; height: 100.0%;">Austin, Texas, USA</div>`)[0];
+                popup_4ea6b5fc6316dfa1e09a4c1323ad6af8.setContent(html_d0fa104952a6acccebe781fbd51cdd72);
+            
+        
+
+        circle_marker_a75b485e1e7489c46b0fea12f94f1eb9.bindPopup(popup_4ea6b5fc6316dfa1e09a4c1323ad6af8)
+        ;
+
+        
+    
+    
+            var circle_marker_6abefd6ea5622ea5bdf3d0f544b4bdf8 = L.circleMarker(
+                [39.2908816, -76.610759],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_e56b38cd23c8a8dfd67458fd734b3474 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a68d12e87a7a79f8cea11c0499f292ae = $(`<div id="html_a68d12e87a7a79f8cea11c0499f292ae" style="width: 100.0%; height: 100.0%;">Baltimore, Maryland, USA</div>`)[0];
+                popup_e56b38cd23c8a8dfd67458fd734b3474.setContent(html_a68d12e87a7a79f8cea11c0499f292ae);
+            
+        
+
+        circle_marker_6abefd6ea5622ea5bdf3d0f544b4bdf8.bindPopup(popup_e56b38cd23c8a8dfd67458fd734b3474)
+        ;
+
+        
+    
+    
+            var circle_marker_633a21789194edd5721a5270bb97fd67 = L.circleMarker(
+                [44.8011821, -68.7778138],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_eece393788136767a7a2be2fb4a2bc63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89e069e359c6447a4507ca156d4b397d = $(`<div id="html_89e069e359c6447a4507ca156d4b397d" style="width: 100.0%; height: 100.0%;">Bangor, Maine, USA</div>`)[0];
+                popup_eece393788136767a7a2be2fb4a2bc63.setContent(html_89e069e359c6447a4507ca156d4b397d);
+            
+        
+
+        circle_marker_633a21789194edd5721a5270bb97fd67.bindPopup(popup_eece393788136767a7a2be2fb4a2bc63)
+        ;
+
+        
+    
+    
+            var circle_marker_71ee8999f3f253de9534e305869030ed = L.circleMarker(
+                [-23.5112184, -46.8764612],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_35e431aa7ac74b3be70d9722dcdb8fc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef8064c0c8e2defda32145c86bd57505 = $(`<div id="html_ef8064c0c8e2defda32145c86bd57505" style="width: 100.0%; height: 100.0%;">Barueri, Sao Paulo, Brazil</div>`)[0];
+                popup_35e431aa7ac74b3be70d9722dcdb8fc5.setContent(html_ef8064c0c8e2defda32145c86bd57505);
+            
+        
+
+        circle_marker_71ee8999f3f253de9534e305869030ed.bindPopup(popup_35e431aa7ac74b3be70d9722dcdb8fc5)
+        ;
+
+        
+    
+    
+            var circle_marker_dbfbe26eff47dd2fea75b07fe094fe24 = L.circleMarker(
+                [30.3132453, -89.3343223],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.28}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_87815426bcd47c99e12be7710c70741a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef14634505d81371f03bfa0cb58cc48 = $(`<div id="html_aef14634505d81371f03bfa0cb58cc48" style="width: 100.0%; height: 100.0%;">Bay St. Louis, Mississippi, USA</div>`)[0];
+                popup_87815426bcd47c99e12be7710c70741a.setContent(html_aef14634505d81371f03bfa0cb58cc48);
+            
+        
+
+        circle_marker_dbfbe26eff47dd2fea75b07fe094fe24.bindPopup(popup_87815426bcd47c99e12be7710c70741a)
+        ;
+
+        
+    
+    
+            var circle_marker_cc3adf378e92b03bb5f99fe34e0dcd2b = L.circleMarker(
+                [39.906217, 116.3912757],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ea053338f3ce38007ff08e8290d8824c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3de7ab439636418accfcbd99e0b5883 = $(`<div id="html_e3de7ab439636418accfcbd99e0b5883" style="width: 100.0%; height: 100.0%;">Beijing, China</div>`)[0];
+                popup_ea053338f3ce38007ff08e8290d8824c.setContent(html_e3de7ab439636418accfcbd99e0b5883);
+            
+        
+
+        circle_marker_cc3adf378e92b03bb5f99fe34e0dcd2b.bindPopup(popup_ea053338f3ce38007ff08e8290d8824c)
+        ;
+
+        
+    
+    
+            var circle_marker_d99d083e564e72116cf783f7ca1426be = L.circleMarker(
+                [-1.45056, -48.4682453],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_46953b7a257072352c6698ab2e694c3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda371897feb6640c2d1d86c8a8d8167 = $(`<div id="html_bda371897feb6640c2d1d86c8a8d8167" style="width: 100.0%; height: 100.0%;">Belem, Para, Brazil</div>`)[0];
+                popup_46953b7a257072352c6698ab2e694c3e.setContent(html_bda371897feb6640c2d1d86c8a8d8167);
+            
+        
+
+        circle_marker_d99d083e564e72116cf783f7ca1426be.bindPopup(popup_46953b7a257072352c6698ab2e694c3e)
+        ;
+
+        
+    
+    
+            var circle_marker_0df07766b1038c9c2fc340c9b7b5b63b = L.circleMarker(
+                [54.596391, -5.9301829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.525, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.42}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_8af23ec147763fb56843f9ae16fc0f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afbb3862c7ed1f8ba44b67fc915bd7f = $(`<div id="html_1afbb3862c7ed1f8ba44b67fc915bd7f" style="width: 100.0%; height: 100.0%;">Belfast, Northern Ireland, United Kingdom</div>`)[0];
+                popup_8af23ec147763fb56843f9ae16fc0f44.setContent(html_1afbb3862c7ed1f8ba44b67fc915bd7f);
+            
+        
+
+        circle_marker_0df07766b1038c9c2fc340c9b7b5b63b.bindPopup(popup_8af23ec147763fb56843f9ae16fc0f44)
+        ;
+
+        
+    
+    
+            var circle_marker_652beffc4e048f12181825231f34906e = L.circleMarker(
+                [-19.9225776, -43.9451356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6f4b121e6eba1da582ef91b9ca54a21b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cae19fe25facea2de5a88a4858c253c = $(`<div id="html_7cae19fe25facea2de5a88a4858c253c" style="width: 100.0%; height: 100.0%;">Belo Horizonte, Minas Gerais, Brazil</div>`)[0];
+                popup_6f4b121e6eba1da582ef91b9ca54a21b.setContent(html_7cae19fe25facea2de5a88a4858c253c);
+            
+        
+
+        circle_marker_652beffc4e048f12181825231f34906e.bindPopup(popup_6f4b121e6eba1da582ef91b9ca54a21b)
+        ;
+
+        
+    
+    
+            var circle_marker_69ce280615e494c17a6c053b645e25df = L.circleMarker(
+                [52.5103817, 13.4349112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2a6cd42e35bd82be4838d96f3aabb5cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb49c2134fd305213a67eca5b6872cc4 = $(`<div id="html_eb49c2134fd305213a67eca5b6872cc4" style="width: 100.0%; height: 100.0%;">Berlin, Berlin, Germany</div>`)[0];
+                popup_2a6cd42e35bd82be4838d96f3aabb5cf.setContent(html_eb49c2134fd305213a67eca5b6872cc4);
+            
+        
+
+        circle_marker_69ce280615e494c17a6c053b645e25df.bindPopup(popup_2a6cd42e35bd82be4838d96f3aabb5cf)
+        ;
+
+        
+    
+    
+            var circle_marker_7e8a67694842c6ad24ba0cb8512f0892 = L.circleMarker(
+                [52.5170365, 13.3888599],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_0874267576a7bb99a29fc426a9351f11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6b86d3bb9a2adc5c8e937a632130d65 = $(`<div id="html_d6b86d3bb9a2adc5c8e937a632130d65" style="width: 100.0%; height: 100.0%;">Berlin, Germany</div>`)[0];
+                popup_0874267576a7bb99a29fc426a9351f11.setContent(html_d6b86d3bb9a2adc5c8e937a632130d65);
+            
+        
+
+        circle_marker_7e8a67694842c6ad24ba0cb8512f0892.bindPopup(popup_0874267576a7bb99a29fc426a9351f11)
+        ;
+
+        
+    
+    
+            var circle_marker_80cf22fb8168654d68094462f6fdee15 = L.circleMarker(
+                [33.5206824, -86.8024326],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.775, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.62}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_472c23face6fb0120660e9943b5433ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a941b0d0357d78c38db1bfa88b3cf32f = $(`<div id="html_a941b0d0357d78c38db1bfa88b3cf32f" style="width: 100.0%; height: 100.0%;">Birmingham, Alabama, USA</div>`)[0];
+                popup_472c23face6fb0120660e9943b5433ee.setContent(html_a941b0d0357d78c38db1bfa88b3cf32f);
+            
+        
+
+        circle_marker_80cf22fb8168654d68094462f6fdee15.bindPopup(popup_472c23face6fb0120660e9943b5433ee)
+        ;
+
+        
+    
+    
+            var circle_marker_157c5b31eca85e38754329bc6b02e54f = L.circleMarker(
+                [52.4796992, -1.9026911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.525, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.42}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_3ff03e55f6985a659ade2b7e12f8b5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17a251ec39288dc3b94066ae460b23d = $(`<div id="html_c17a251ec39288dc3b94066ae460b23d" style="width: 100.0%; height: 100.0%;">Birmingham, England, United Kingdom</div>`)[0];
+                popup_3ff03e55f6985a659ade2b7e12f8b5f4.setContent(html_c17a251ec39288dc3b94066ae460b23d);
+            
+        
+
+        circle_marker_157c5b31eca85e38754329bc6b02e54f.bindPopup(popup_3ff03e55f6985a659ade2b7e12f8b5f4)
+        ;
+
+        
+    
+    
+            var circle_marker_19a7f65cbbb8b5b54b32aca5a69014e8 = L.circleMarker(
+                [43.6166163, -116.200886],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_60bfa8f421750f0a2860343af3721091 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_397cc0087cc6bd99bfbbb76f60e94a48 = $(`<div id="html_397cc0087cc6bd99bfbbb76f60e94a48" style="width: 100.0%; height: 100.0%;">Boise, Idaho, USA</div>`)[0];
+                popup_60bfa8f421750f0a2860343af3721091.setContent(html_397cc0087cc6bd99bfbbb76f60e94a48);
+            
+        
+
+        circle_marker_19a7f65cbbb8b5b54b32aca5a69014e8.bindPopup(popup_60bfa8f421750f0a2860343af3721091)
+        ;
+
+        
+    
+    
+            var circle_marker_a604b6b738257d612b97b35e67f85f99 = L.circleMarker(
+                [32.5369356, -93.6952689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.16}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_5e7c3d192dd559598ff0b72fb68d8198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddc68df46ce3d8033ed6508385718875 = $(`<div id="html_ddc68df46ce3d8033ed6508385718875" style="width: 100.0%; height: 100.0%;">Bossier City, Louisiana, USA</div>`)[0];
+                popup_5e7c3d192dd559598ff0b72fb68d8198.setContent(html_ddc68df46ce3d8033ed6508385718875);
+            
+        
+
+        circle_marker_a604b6b738257d612b97b35e67f85f99.bindPopup(popup_5e7c3d192dd559598ff0b72fb68d8198)
+        ;
+
+        
+    
+    
+            var circle_marker_84a3e055056f7b5d2091f8eabfb86538 = L.circleMarker(
+                [42.3554334, -71.060511],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_5f59471a09e3d65ff81eda7c8f41f199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d24df3b253a798938124b787f15761c = $(`<div id="html_0d24df3b253a798938124b787f15761c" style="width: 100.0%; height: 100.0%;">Boston, Massachusetts, USA</div>`)[0];
+                popup_5f59471a09e3d65ff81eda7c8f41f199.setContent(html_0d24df3b253a798938124b787f15761c);
+            
+        
+
+        circle_marker_84a3e055056f7b5d2091f8eabfb86538.bindPopup(popup_5f59471a09e3d65ff81eda7c8f41f199)
+        ;
+
+        
+    
+    
+            var circle_marker_736ab027380df935a059734b4f3eece4 = L.circleMarker(
+                [-15.7934036, -47.8823172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.72}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_630b772942f3cdf34df4f5287bb88c43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3957f9066ca7572572260679edb6fcf9 = $(`<div id="html_3957f9066ca7572572260679edb6fcf9" style="width: 100.0%; height: 100.0%;">Brasilia, Distrito Federal, Brazil</div>`)[0];
+                popup_630b772942f3cdf34df4f5287bb88c43.setContent(html_3957f9066ca7572572260679edb6fcf9);
+            
+        
+
+        circle_marker_736ab027380df935a059734b4f3eece4.bindPopup(popup_630b772942f3cdf34df4f5287bb88c43)
+        ;
+
+        
+    
+    
+            var circle_marker_37a1812af23876af6c3d1a3ad34fd646 = L.circleMarker(
+                [-27.4689682, 153.0234991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_dfe2d6bcccbf7aadd232aac085105092 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f7236d53afa971c7baa33b52f406c07 = $(`<div id="html_2f7236d53afa971c7baa33b52f406c07" style="width: 100.0%; height: 100.0%;">Brisbane, Queensland, Australia</div>`)[0];
+                popup_dfe2d6bcccbf7aadd232aac085105092.setContent(html_2f7236d53afa971c7baa33b52f406c07);
+            
+        
+
+        circle_marker_37a1812af23876af6c3d1a3ad34fd646.bindPopup(popup_dfe2d6bcccbf7aadd232aac085105092)
+        ;
+
+        
+    
+    
+            var circle_marker_5ef918b668186bee700843378ca5f2f6 = L.circleMarker(
+                [40.6526006, -73.9497211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.64}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_211a145a68021cf831cf7e6ba1755899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bf2f72ee8712c1db2c92107d9f93bc1 = $(`<div id="html_0bf2f72ee8712c1db2c92107d9f93bc1" style="width: 100.0%; height: 100.0%;">Brooklyn, New York, USA</div>`)[0];
+                popup_211a145a68021cf831cf7e6ba1755899.setContent(html_0bf2f72ee8712c1db2c92107d9f93bc1);
+            
+        
+
+        circle_marker_5ef918b668186bee700843378ca5f2f6.bindPopup(popup_211a145a68021cf831cf7e6ba1755899)
+        ;
+
+        
+    
+    
+            var circle_marker_79f57486d3f2ad5f2200886a130212a2 = L.circleMarker(
+                [39.9403995, -105.05208],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.825, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.66}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_eb8491d7448ed0ee3e6830423d80bf3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca43f7f0531308c17fd61e9aec48c0cb = $(`<div id="html_ca43f7f0531308c17fd61e9aec48c0cb" style="width: 100.0%; height: 100.0%;">Broomfield, Colorado, USA</div>`)[0];
+                popup_eb8491d7448ed0ee3e6830423d80bf3b.setContent(html_ca43f7f0531308c17fd61e9aec48c0cb);
+            
+        
+
+        circle_marker_79f57486d3f2ad5f2200886a130212a2.bindPopup(popup_eb8491d7448ed0ee3e6830423d80bf3b)
+        ;
+
+        
+    
+    
+            var circle_marker_6fbc160828d856462e4010ef09a48f2b = L.circleMarker(
+                [-34.6075682, -58.4370894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_1fe5295cce727093c6a02803570ae2cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54a52cf95f56b02bf545111e4c27f5b0 = $(`<div id="html_54a52cf95f56b02bf545111e4c27f5b0" style="width: 100.0%; height: 100.0%;">Buenos Aires, Buenos Aires, Argentina</div>`)[0];
+                popup_1fe5295cce727093c6a02803570ae2cf.setContent(html_54a52cf95f56b02bf545111e4c27f5b0);
+            
+        
+
+        circle_marker_6fbc160828d856462e4010ef09a48f2b.bindPopup(popup_1fe5295cce727093c6a02803570ae2cf)
+        ;
+
+        
+    
+    
+            var circle_marker_2ac57753c0afd813213b99fa41d205a8 = L.circleMarker(
+                [42.8867166, -78.8783922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2fb2bd5a6ead1d0f8fd6258fa1df6e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38150ecc1a7381e76891bbdccebb79dc = $(`<div id="html_38150ecc1a7381e76891bbdccebb79dc" style="width: 100.0%; height: 100.0%;">Buffalo, New York, USA</div>`)[0];
+                popup_2fb2bd5a6ead1d0f8fd6258fa1df6e88.setContent(html_38150ecc1a7381e76891bbdccebb79dc);
+            
+        
+
+        circle_marker_2ac57753c0afd813213b99fa41d205a8.bindPopup(popup_2fb2bd5a6ead1d0f8fd6258fa1df6e88)
+        ;
+
+        
+    
+    
+            var circle_marker_158e5efeeb630255bae763a133e1f40a = L.circleMarker(
+                [35.1799528, 129.0752365],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_9b68854a0da68973025a5a805dc26fec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd93a26550b8cd641c8f75b783b74a8f = $(`<div id="html_cd93a26550b8cd641c8f75b783b74a8f" style="width: 100.0%; height: 100.0%;">Busan, South Korea</div>`)[0];
+                popup_9b68854a0da68973025a5a805dc26fec.setContent(html_cd93a26550b8cd641c8f75b783b74a8f);
+            
+        
+
+        circle_marker_158e5efeeb630255bae763a133e1f40a.bindPopup(popup_9b68854a0da68973025a5a805dc26fec)
+        ;
+
+        
+    
+    
+            var circle_marker_285f8e891a4b70ea1f6b9d178797a751 = L.circleMarker(
+                [51.0460954, -114.065465],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_dcdae9971ca3211b1dde00d9a1b4db22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e484f6bce9c1d92d4647ee886b48ee2c = $(`<div id="html_e484f6bce9c1d92d4647ee886b48ee2c" style="width: 100.0%; height: 100.0%;">Calgary, Alberta, Canada</div>`)[0];
+                popup_dcdae9971ca3211b1dde00d9a1b4db22.setContent(html_e484f6bce9c1d92d4647ee886b48ee2c);
+            
+        
+
+        circle_marker_285f8e891a4b70ea1f6b9d178797a751.bindPopup(popup_dcdae9971ca3211b1dde00d9a1b4db22)
+        ;
+
+        
+    
+    
+            var circle_marker_33553323dd0a7557d32a1e312fdf947e = L.circleMarker(
+                [42.8501191, -106.325138],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.16}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_806d0ed03caef18f1b5e4e6f44f905e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e6c26eef50405626d1d51e95b9db208 = $(`<div id="html_8e6c26eef50405626d1d51e95b9db208" style="width: 100.0%; height: 100.0%;">Casper, Wyoming, USA</div>`)[0];
+                popup_806d0ed03caef18f1b5e4e6f44f905e0.setContent(html_8e6c26eef50405626d1d51e95b9db208);
+            
+        
+
+        circle_marker_33553323dd0a7557d32a1e312fdf947e.bindPopup(popup_806d0ed03caef18f1b5e4e6f44f905e0)
+        ;
+
+        
+    
+    
+            var circle_marker_034284f247fa9571094e1b147df54419 = L.circleMarker(
+                [41.9758872, -91.6704053],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.32}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_7c6001fe639887292e7dc8d6d1cb4d08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6408080fcba859593b6b3d5bebb49ef = $(`<div id="html_e6408080fcba859593b6b3d5bebb49ef" style="width: 100.0%; height: 100.0%;">Cedar Rapids, Iowa, USA</div>`)[0];
+                popup_7c6001fe639887292e7dc8d6d1cb4d08.setContent(html_e6408080fcba859593b6b3d5bebb49ef);
+            
+        
+
+        circle_marker_034284f247fa9571094e1b147df54419.bindPopup(popup_7c6001fe639887292e7dc8d6d1cb4d08)
+        ;
+
+        
+    
+    
+            var circle_marker_1f6c8794093a4b21b39becd3636a89cd = L.circleMarker(
+                [35.2272086, -80.8430827],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.975, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.78}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_4c647a55da364b2d48e2576521bed3d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_266c3325278a72b5254842673631a755 = $(`<div id="html_266c3325278a72b5254842673631a755" style="width: 100.0%; height: 100.0%;">Charlotte, North Carolina, USA</div>`)[0];
+                popup_4c647a55da364b2d48e2576521bed3d5.setContent(html_266c3325278a72b5254842673631a755);
+            
+        
+
+        circle_marker_1f6c8794093a4b21b39becd3636a89cd.bindPopup(popup_4c647a55da364b2d48e2576521bed3d5)
+        ;
+
+        
+    
+    
+            var circle_marker_04d27ce93ca3a3385c5305acc23c42df = L.circleMarker(
+                [35.549399, 140.2647303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.175, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.14}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_758ae47d83523087fc6f33c51bbaf59f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38d835f7c6df0799bb2460d2b620a73d = $(`<div id="html_38d835f7c6df0799bb2460d2b620a73d" style="width: 100.0%; height: 100.0%;">Chiba, Japan</div>`)[0];
+                popup_758ae47d83523087fc6f33c51bbaf59f.setContent(html_38d835f7c6df0799bb2460d2b620a73d);
+            
+        
+
+        circle_marker_04d27ce93ca3a3385c5305acc23c42df.bindPopup(popup_758ae47d83523087fc6f33c51bbaf59f)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca29dbecfff97201201a296a50f6a25 = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.025, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.62}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_777b553d9c6df96286a572d5e7c95a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cccd94c372a2da5f7b5652a4b067ddbb = $(`<div id="html_cccd94c372a2da5f7b5652a4b067ddbb" style="width: 100.0%; height: 100.0%;">Chicago, Illinois, USA</div>`)[0];
+                popup_777b553d9c6df96286a572d5e7c95a89.setContent(html_cccd94c372a2da5f7b5652a4b067ddbb);
+            
+        
+
+        circle_marker_4ca29dbecfff97201201a296a50f6a25.bindPopup(popup_777b553d9c6df96286a572d5e7c95a89)
+        ;
+
+        
+    
+    
+            var circle_marker_ccbaef12c93b8db84edd63166c241bd3 = L.circleMarker(
+                [39.1014537, -84.5124602],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_546005f25171eb7fc116f07c73e7cb31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58b9f7c43f086cfbe99764bee0defd0c = $(`<div id="html_58b9f7c43f086cfbe99764bee0defd0c" style="width: 100.0%; height: 100.0%;">Cincinnati, Ohio, USA</div>`)[0];
+                popup_546005f25171eb7fc116f07c73e7cb31.setContent(html_58b9f7c43f086cfbe99764bee0defd0c);
+            
+        
+
+        circle_marker_ccbaef12c93b8db84edd63166c241bd3.bindPopup(popup_546005f25171eb7fc116f07c73e7cb31)
+        ;
+
+        
+    
+    
+            var circle_marker_1059bf91e1a8bff271992adf57d60fff = L.circleMarker(
+                [41.4996574, -81.6936772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_b101a07b0229ec960f69bb674d984f67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45539e5c80a1010a6ec7217a8bf5ae1 = $(`<div id="html_f45539e5c80a1010a6ec7217a8bf5ae1" style="width: 100.0%; height: 100.0%;">Cleveland, Ohio, USA</div>`)[0];
+                popup_b101a07b0229ec960f69bb674d984f67.setContent(html_f45539e5c80a1010a6ec7217a8bf5ae1);
+            
+        
+
+        circle_marker_1059bf91e1a8bff271992adf57d60fff.bindPopup(popup_b101a07b0229ec960f69bb674d984f67)
+        ;
+
+        
+    
+    
+            var circle_marker_14bb7695f8867cd593c249beee8af189 = L.circleMarker(
+                [50.938361, 6.959974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_e0a9878ef28caf87995f04e5283f1b3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5216e2104799984c15a9b6061d19c8d = $(`<div id="html_e5216e2104799984c15a9b6061d19c8d" style="width: 100.0%; height: 100.0%;">Cologne, North Rhine-Westphalia, Germany</div>`)[0];
+                popup_e0a9878ef28caf87995f04e5283f1b3e.setContent(html_e5216e2104799984c15a9b6061d19c8d);
+            
+        
+
+        circle_marker_14bb7695f8867cd593c249beee8af189.bindPopup(popup_e0a9878ef28caf87995f04e5283f1b3e)
+        ;
+
+        
+    
+    
+            var circle_marker_ee80fa3c516b4ff255e1338de75fbcc9 = L.circleMarker(
+                [39.9622601, -83.0007065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.725, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.58}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_be70f1844448ebad256ad7dc3650dc59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a28c644f1a3cd57b3dd70e62d806136c = $(`<div id="html_a28c644f1a3cd57b3dd70e62d806136c" style="width: 100.0%; height: 100.0%;">Columbus, Ohio, USA</div>`)[0];
+                popup_be70f1844448ebad256ad7dc3650dc59.setContent(html_a28c644f1a3cd57b3dd70e62d806136c);
+            
+        
+
+        circle_marker_ee80fa3c516b4ff255e1338de75fbcc9.bindPopup(popup_be70f1844448ebad256ad7dc3650dc59)
+        ;
+
+        
+    
+    
+            var circle_marker_a27cfc92059bffe47c5ba3c71d55a5a8 = L.circleMarker(
+                [55.6867243, 12.5700724],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2c9da15188e264a942cfe3e2accbcc1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314ce49716c334170a2247c4e885b90b = $(`<div id="html_314ce49716c334170a2247c4e885b90b" style="width: 100.0%; height: 100.0%;">Copenhagen, Denmark</div>`)[0];
+                popup_2c9da15188e264a942cfe3e2accbcc1e.setContent(html_314ce49716c334170a2247c4e885b90b);
+            
+        
+
+        circle_marker_a27cfc92059bffe47c5ba3c71d55a5a8.bindPopup(popup_2c9da15188e264a942cfe3e2accbcc1e)
+        ;
+
+        
+    
+    
+            var circle_marker_93d49eb6d0eed7b8c22901c91653ea13 = L.circleMarker(
+                [-25.4295963, -49.2712724],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_246fff605a5ec6cd17f9ec7f8281ebb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31ebcef104dac7d12deb176e01ea4c35 = $(`<div id="html_31ebcef104dac7d12deb176e01ea4c35" style="width: 100.0%; height: 100.0%;">Curitiba, Parana, Brazil</div>`)[0];
+                popup_246fff605a5ec6cd17f9ec7f8281ebb7.setContent(html_31ebcef104dac7d12deb176e01ea4c35);
+            
+        
+
+        circle_marker_93d49eb6d0eed7b8c22901c91653ea13.bindPopup(popup_246fff605a5ec6cd17f9ec7f8281ebb7)
+        ;
+
+        
+    
+    
+            var circle_marker_a6a5728330fe8e1e471eb1469cd2b8ec = L.circleMarker(
+                [32.7762719, -96.7968559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a1012e942e221d751b6e266f16ee0de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_646e8847e87ab7952fc364f2411d3a86 = $(`<div id="html_646e8847e87ab7952fc364f2411d3a86" style="width: 100.0%; height: 100.0%;">Dallas, Texas, USA</div>`)[0];
+                popup_a1012e942e221d751b6e266f16ee0de8.setContent(html_646e8847e87ab7952fc364f2411d3a86);
+            
+        
+
+        circle_marker_a6a5728330fe8e1e471eb1469cd2b8ec.bindPopup(popup_a1012e942e221d751b6e266f16ee0de8)
+        ;
+
+        
+    
+    
+            var circle_marker_5c2b91df9f596dcba17553c5e4a06138 = L.circleMarker(
+                [39.7392364, -104.984862],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.32}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_19c4fd2fe09963268b12259f1cf17881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8191b17443ffc77a61a9ee5efd1fafb8 = $(`<div id="html_8191b17443ffc77a61a9ee5efd1fafb8" style="width: 100.0%; height: 100.0%;">Denver, Colorado, USA</div>`)[0];
+                popup_19c4fd2fe09963268b12259f1cf17881.setContent(html_8191b17443ffc77a61a9ee5efd1fafb8);
+            
+        
+
+        circle_marker_5c2b91df9f596dcba17553c5e4a06138.bindPopup(popup_19c4fd2fe09963268b12259f1cf17881)
+        ;
+
+        
+    
+    
+            var circle_marker_cc1fc42906b6ed54861899eaa1badabb = L.circleMarker(
+                [42.3315509, -83.0466403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.4}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_04dff95c4b8c2a4fffb90dccbd5dde8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_225615e3fa4db1818210d4e8a90be29e = $(`<div id="html_225615e3fa4db1818210d4e8a90be29e" style="width: 100.0%; height: 100.0%;">Detroit, Michigan, USA</div>`)[0];
+                popup_04dff95c4b8c2a4fffb90dccbd5dde8d.setContent(html_225615e3fa4db1818210d4e8a90be29e);
+            
+        
+
+        circle_marker_cc1fc42906b6ed54861899eaa1badabb.bindPopup(popup_04dff95c4b8c2a4fffb90dccbd5dde8d)
+        ;
+
+        
+    
+    
+            var circle_marker_bcbf7299f981e7ba338d71bc1965d09a = L.circleMarker(
+                [31.2237434, -85.3933906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.175, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.14}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ef289364a074e84f51785d3356f2f8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7902292e741845f0f89bc7e83d0e2331 = $(`<div id="html_7902292e741845f0f89bc7e83d0e2331" style="width: 100.0%; height: 100.0%;">Dothan, Alabama, USA</div>`)[0];
+                popup_ef289364a074e84f51785d3356f2f8a4.setContent(html_7902292e741845f0f89bc7e83d0e2331);
+            
+        
+
+        circle_marker_bcbf7299f981e7ba338d71bc1965d09a.bindPopup(popup_ef289364a074e84f51785d3356f2f8a4)
+        ;
+
+        
+    
+    
+            var circle_marker_71ab12534b08de643088c4ba0449e77e = L.circleMarker(
+                [53.3498006, -6.2602964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.6}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a829f6b946afb3b075711cd4a63d21fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28e5f2f0d5d45fa4cf7ff24212a6f023 = $(`<div id="html_28e5f2f0d5d45fa4cf7ff24212a6f023" style="width: 100.0%; height: 100.0%;">Dublin, Leinster, Ireland</div>`)[0];
+                popup_a829f6b946afb3b075711cd4a63d21fe.setContent(html_28e5f2f0d5d45fa4cf7ff24212a6f023);
+            
+        
+
+        circle_marker_71ab12534b08de643088c4ba0449e77e.bindPopup(popup_a829f6b946afb3b075711cd4a63d21fe)
+        ;
+
+        
+    
+    
+            var circle_marker_fd12537f54277bd7616bf3268c8c6822 = L.circleMarker(
+                [34.0028569, -84.1441046],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6125d305d36f438826ea4f572e343d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c0abffe5e724a9475ecac5df571ac56 = $(`<div id="html_8c0abffe5e724a9475ecac5df571ac56" style="width: 100.0%; height: 100.0%;">Duluth, Georgia, USA</div>`)[0];
+                popup_6125d305d36f438826ea4f572e343d3b.setContent(html_8c0abffe5e724a9475ecac5df571ac56);
+            
+        
+
+        circle_marker_fd12537f54277bd7616bf3268c8c6822.bindPopup(popup_6125d305d36f438826ea4f572e343d3b)
+        ;
+
+        
+    
+    
+            var circle_marker_efc54140d457a37ba394611a875890ff = L.circleMarker(
+                [40.833989, -74.0970865],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.4}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_34d5d67cfe6aa27e1f5e3ab39feac621 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31ada3093064fc49d3f546a021883abe = $(`<div id="html_31ada3093064fc49d3f546a021883abe" style="width: 100.0%; height: 100.0%;">East Rutherford, New Jersey, USA</div>`)[0];
+                popup_34d5d67cfe6aa27e1f5e3ab39feac621.setContent(html_31ada3093064fc49d3f546a021883abe);
+            
+        
+
+        circle_marker_efc54140d457a37ba394611a875890ff.bindPopup(popup_34d5d67cfe6aa27e1f5e3ab39feac621)
+        ;
+
+        
+    
+    
+            var circle_marker_8d6b639dc9ae845268450ac743c7bd01 = L.circleMarker(
+                [53.5462055, -113.491241],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_cecd7a45972a4e4d459f25482fdd4429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e81c3b3f8da1ba4cf7c809e5d583e1d = $(`<div id="html_4e81c3b3f8da1ba4cf7c809e5d583e1d" style="width: 100.0%; height: 100.0%;">Edmonton, Alberta, Canada</div>`)[0];
+                popup_cecd7a45972a4e4d459f25482fdd4429.setContent(html_4e81c3b3f8da1ba4cf7c809e5d583e1d);
+            
+        
+
+        circle_marker_8d6b639dc9ae845268450ac743c7bd01.bindPopup(popup_cecd7a45972a4e4d459f25482fdd4429)
+        ;
+
+        
+    
+    
+            var circle_marker_56882688ca2b03a7e73e0ebd873edc1f = L.circleMarker(
+                [38.8462236, -77.3063733],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.825, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.66}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_1771e99084eb1fde8a647cfd1b58cfcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8898ee0f6ea2ee4da1a780484ed307e3 = $(`<div id="html_8898ee0f6ea2ee4da1a780484ed307e3" style="width: 100.0%; height: 100.0%;">Fairfax, Virginia, USA</div>`)[0];
+                popup_1771e99084eb1fde8a647cfd1b58cfcf.setContent(html_8898ee0f6ea2ee4da1a780484ed307e3);
+            
+        
+
+        circle_marker_56882688ca2b03a7e73e0ebd873edc1f.bindPopup(popup_1771e99084eb1fde8a647cfd1b58cfcf)
+        ;
+
+        
+    
+    
+            var circle_marker_c4609f3c0db20f6d43261fc7b1b864c5 = L.circleMarker(
+                [35.0525759, -78.878292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_cb54b867f000b95f04448284b07af834 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb1c67310f5038abbfab1992fb8face5 = $(`<div id="html_fb1c67310f5038abbfab1992fb8face5" style="width: 100.0%; height: 100.0%;">Fayetteville, North Carolina, USA</div>`)[0];
+                popup_cb54b867f000b95f04448284b07af834.setContent(html_fb1c67310f5038abbfab1992fb8face5);
+            
+        
+
+        circle_marker_c4609f3c0db20f6d43261fc7b1b864c5.bindPopup(popup_cb54b867f000b95f04448284b07af834)
+        ;
+
+        
+    
+    
+            var circle_marker_1af65ce44743f89431bda0d0cba1bc21 = L.circleMarker(
+                [36.6313383, -87.61568844317374],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_fd9b2d7036d65cc3e1de1d12ff836c64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d406f51c6d03c872279eeae16a1e730 = $(`<div id="html_9d406f51c6d03c872279eeae16a1e730" style="width: 100.0%; height: 100.0%;">Fort Campbell, Kentucky, USA</div>`)[0];
+                popup_fd9b2d7036d65cc3e1de1d12ff836c64.setContent(html_9d406f51c6d03c872279eeae16a1e730);
+            
+        
+
+        circle_marker_1af65ce44743f89431bda0d0cba1bc21.bindPopup(popup_fd9b2d7036d65cc3e1de1d12ff836c64)
+        ;
+
+        
+    
+    
+            var circle_marker_da027369bbc07f412d55fe70719088db = L.circleMarker(
+                [-3.7304512, -38.5217989],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.925, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.74}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_fd8f52c4388dae5c6f5a7baded6e7019 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6959f5b8b6ae6e173d4141d1881ac6a7 = $(`<div id="html_6959f5b8b6ae6e173d4141d1881ac6a7" style="width: 100.0%; height: 100.0%;">Fortaleza, Ceara, Brazil</div>`)[0];
+                popup_fd8f52c4388dae5c6f5a7baded6e7019.setContent(html_6959f5b8b6ae6e173d4141d1881ac6a7);
+            
+        
+
+        circle_marker_da027369bbc07f412d55fe70719088db.bindPopup(popup_fd8f52c4388dae5c6f5a7baded6e7019)
+        ;
+
+        
+    
+    
+            var circle_marker_dbe9b7770cad10f8c4a5b6dcbe0d2d4f = L.circleMarker(
+                [36.7394421, -119.7848307],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_30f42a9054884599bbc27eaaef66f819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_964d754333e30164ef25eab6c4b810ca = $(`<div id="html_964d754333e30164ef25eab6c4b810ca" style="width: 100.0%; height: 100.0%;">Fresno, California, USA</div>`)[0];
+                popup_30f42a9054884599bbc27eaaef66f819.setContent(html_964d754333e30164ef25eab6c4b810ca);
+            
+        
+
+        circle_marker_dbe9b7770cad10f8c4a5b6dcbe0d2d4f.bindPopup(popup_30f42a9054884599bbc27eaaef66f819)
+        ;
+
+        
+    
+    
+            var circle_marker_a700429479033ae8dd308817045ba079 = L.circleMarker(
+                [54.3706858, 18.61298210330077],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_12089abcc3971d2f26c3cf8c7574c6e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c6865e2d16d916b75efcf0e0207b9c = $(`<div id="html_e5c6865e2d16d916b75efcf0e0207b9c" style="width: 100.0%; height: 100.0%;">Gdansk, Poland</div>`)[0];
+                popup_12089abcc3971d2f26c3cf8c7574c6e8.setContent(html_e5c6865e2d16d916b75efcf0e0207b9c);
+            
+        
+
+        circle_marker_a700429479033ae8dd308817045ba079.bindPopup(popup_12089abcc3971d2f26c3cf8c7574c6e8)
+        ;
+
+        
+    
+    
+            var circle_marker_e8af4ee46aa6150e495931e59860252d = L.circleMarker(
+                [55.8609825, -4.2488787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_5f58c2d4010608ae5a6d2143dc38e60d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b589440284191961d99b2cc287f8a61 = $(`<div id="html_4b589440284191961d99b2cc287f8a61" style="width: 100.0%; height: 100.0%;">Glasgow, Scotland, United Kingdom</div>`)[0];
+                popup_5f58c2d4010608ae5a6d2143dc38e60d.setContent(html_4b589440284191961d99b2cc287f8a61);
+            
+        
+
+        circle_marker_e8af4ee46aa6150e495931e59860252d.bindPopup(popup_5f58c2d4010608ae5a6d2143dc38e60d)
+        ;
+
+        
+    
+    
+            var circle_marker_619bf0e5dcd476745b9752fa40d3e7ed = L.circleMarker(
+                [33.5386858, -112.185994],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.28}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6ccc2f67e7c5e2f30bb878c2abb1b9d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c20b1a5eae8b28549715aadb87f73460 = $(`<div id="html_c20b1a5eae8b28549715aadb87f73460" style="width: 100.0%; height: 100.0%;">Glendale, Arizona, USA</div>`)[0];
+                popup_6ccc2f67e7c5e2f30bb878c2abb1b9d1.setContent(html_c20b1a5eae8b28549715aadb87f73460);
+            
+        
+
+        circle_marker_619bf0e5dcd476745b9752fa40d3e7ed.bindPopup(popup_6ccc2f67e7c5e2f30bb878c2abb1b9d1)
+        ;
+
+        
+    
+    
+            var circle_marker_e0ca751c3c8342bd73cb1887715bedda = L.circleMarker(
+                [-16.680882, -49.2532691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_68b9ecd628bb2fd0ff885f6fc3415d6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbb9236305c670628a0b0bd4d2bcf297 = $(`<div id="html_fbb9236305c670628a0b0bd4d2bcf297" style="width: 100.0%; height: 100.0%;">Goiania, Goias, Brazil</div>`)[0];
+                popup_68b9ecd628bb2fd0ff885f6fc3415d6c.setContent(html_fbb9236305c670628a0b0bd4d2bcf297);
+            
+        
+
+        circle_marker_e0ca751c3c8342bd73cb1887715bedda.bindPopup(popup_68b9ecd628bb2fd0ff885f6fc3415d6c)
+        ;
+
+        
+    
+    
+            var circle_marker_24d57ae8616f42a21e24ea9eab09568e = L.circleMarker(
+                [-28.0023731, 153.4145987],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_daa2761b40e7afca41c1dbae3158c0c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48031697fb45f792699a1a65f26f5ca7 = $(`<div id="html_48031697fb45f792699a1a65f26f5ca7" style="width: 100.0%; height: 100.0%;">Gold Coast, Queensland, Australia</div>`)[0];
+                popup_daa2761b40e7afca41c1dbae3158c0c7.setContent(html_48031697fb45f792699a1a65f26f5ca7);
+            
+        
+
+        circle_marker_24d57ae8616f42a21e24ea9eab09568e.bindPopup(popup_daa2761b40e7afca41c1dbae3158c0c7)
+        ;
+
+        
+    
+    
+            var circle_marker_1e92d4bbfe10d01a866eaf216fde0127 = L.circleMarker(
+                [34.851354, -82.3984882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_60ab7f16edd0c88d1f977118f265a27d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5b25d43d5a0b04927d20a220eacb2ce = $(`<div id="html_c5b25d43d5a0b04927d20a220eacb2ce" style="width: 100.0%; height: 100.0%;">Greenville, South Carolina, USA</div>`)[0];
+                popup_60ab7f16edd0c88d1f977118f265a27d.setContent(html_c5b25d43d5a0b04927d20a220eacb2ce);
+            
+        
+
+        circle_marker_1e92d4bbfe10d01a866eaf216fde0127.bindPopup(popup_60ab7f16edd0c88d1f977118f265a27d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b4eeb27325046b0a80041c92373047c = L.circleMarker(
+                [44.648618, -63.5859487],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_9dad85ac11532d48d646ed05c51296ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b0c680ed363398f75333b3a16f2437c = $(`<div id="html_9b0c680ed363398f75333b3a16f2437c" style="width: 100.0%; height: 100.0%;">Halifax, Nova Scotia, Canada</div>`)[0];
+                popup_9dad85ac11532d48d646ed05c51296ad.setContent(html_9b0c680ed363398f75333b3a16f2437c);
+            
+        
+
+        circle_marker_4b4eeb27325046b0a80041c92373047c.bindPopup(popup_9dad85ac11532d48d646ed05c51296ad)
+        ;
+
+        
+    
+    
+            var circle_marker_c290dfc3ea2784aa8f8828522d94d858 = L.circleMarker(
+                [53.5565323, 9.9776028],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_cd4279c4a1091451c2144295689db5db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea1a68e11949531f29ebe8183008c8f0 = $(`<div id="html_ea1a68e11949531f29ebe8183008c8f0" style="width: 100.0%; height: 100.0%;">Hamburg, Hamburg, Germany</div>`)[0];
+                popup_cd4279c4a1091451c2144295689db5db.setContent(html_ea1a68e11949531f29ebe8183008c8f0);
+            
+        
+
+        circle_marker_c290dfc3ea2784aa8f8828522d94d858.bindPopup(popup_cd4279c4a1091451c2144295689db5db)
+        ;
+
+        
+    
+    
+            var circle_marker_85cd1e15dd39d4ee926bcbd8d28c41b1 = L.circleMarker(
+                [26.3530256, -98.216445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_eb1d1a739233d49ecb654cda61eb4cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf72c78c6680d458ceb8dadf534f32ad = $(`<div id="html_bf72c78c6680d458ceb8dadf534f32ad" style="width: 100.0%; height: 100.0%;">Hidalgo, Texas, USA</div>`)[0];
+                popup_eb1d1a739233d49ecb654cda61eb4cf9.setContent(html_bf72c78c6680d458ceb8dadf534f32ad);
+            
+        
+
+        circle_marker_85cd1e15dd39d4ee926bcbd8d28c41b1.bindPopup(popup_eb1d1a739233d49ecb654cda61eb4cf9)
+        ;
+
+        
+    
+    
+            var circle_marker_f864b0c97216c8c5ac06f88b8290a6d5 = L.circleMarker(
+                [26.0112014, -80.1494901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.875, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.7}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_062ef02499c464d2141bf00903006966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5d00dc58fa49e0a7160c3537567eee9 = $(`<div id="html_f5d00dc58fa49e0a7160c3537567eee9" style="width: 100.0%; height: 100.0%;">Hollywood, Florida, USA</div>`)[0];
+                popup_062ef02499c464d2141bf00903006966.setContent(html_f5d00dc58fa49e0a7160c3537567eee9);
+            
+        
+
+        circle_marker_f864b0c97216c8c5ac06f88b8290a6d5.bindPopup(popup_062ef02499c464d2141bf00903006966)
+        ;
+
+        
+    
+    
+            var circle_marker_8b0d6495853774864f38e8bc45eb2359 = L.circleMarker(
+                [29.7589382, -95.3676974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.725, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.38}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_999228d2e315af3be3715d9ebc8d5db1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d5c6c1b3025fbadb4350f5d1d1efe1b = $(`<div id="html_6d5c6c1b3025fbadb4350f5d1d1efe1b" style="width: 100.0%; height: 100.0%;">Houston, Texas, USA</div>`)[0];
+                popup_999228d2e315af3be3715d9ebc8d5db1.setContent(html_6d5c6c1b3025fbadb4350f5d1d1efe1b);
+            
+        
+
+        circle_marker_8b0d6495853774864f38e8bc45eb2359.bindPopup(popup_999228d2e315af3be3715d9ebc8d5db1)
+        ;
+
+        
+    
+    
+            var circle_marker_91644dd437fc10486708f89f9b7fab68 = L.circleMarker(
+                [39.7683331, -86.1583502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_f493477b0b6e72a7aacee7f9e28b8837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efb7aa841331015a56f1889c9181d957 = $(`<div id="html_efb7aa841331015a56f1889c9181d957" style="width: 100.0%; height: 100.0%;">Indianapolis, Indiana, USA</div>`)[0];
+                popup_f493477b0b6e72a7aacee7f9e28b8837.setContent(html_efb7aa841331015a56f1889c9181d957);
+            
+        
+
+        circle_marker_91644dd437fc10486708f89f9b7fab68.bindPopup(popup_f493477b0b6e72a7aacee7f9e28b8837)
+        ;
+
+        
+    
+    
+            var circle_marker_eb9ff87100a69900e65f9ae97f001f30 = L.circleMarker(
+                [30.3321838, -81.655651],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.64}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_1127dd6121e9907b1982d088f60daf18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ec56b1763a80c2179591f8193a8c279 = $(`<div id="html_6ec56b1763a80c2179591f8193a8c279" style="width: 100.0%; height: 100.0%;">Jacksonville, Florida, USA</div>`)[0];
+                popup_1127dd6121e9907b1982d088f60daf18.setContent(html_6ec56b1763a80c2179591f8193a8c279);
+            
+        
+
+        circle_marker_eb9ff87100a69900e65f9ae97f001f30.bindPopup(popup_1127dd6121e9907b1982d088f60daf18)
+        ;
+
+        
+    
+    
+            var circle_marker_9ad5b4acbc3e3921a8c841b7efd2c77a = L.circleMarker(
+                [-26.4897432, -49.0778063],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_eefaaa9bd921e9d571f7df3e04291deb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f290dc69120ec6e8b07eceab72be01c = $(`<div id="html_1f290dc69120ec6e8b07eceab72be01c" style="width: 100.0%; height: 100.0%;">Jaragua do Sul, Santa Catarina, Brazil</div>`)[0];
+                popup_eefaaa9bd921e9d571f7df3e04291deb.setContent(html_1f290dc69120ec6e8b07eceab72be01c);
+            
+        
+
+        circle_marker_9ad5b4acbc3e3921a8c841b7efd2c77a.bindPopup(popup_eefaaa9bd921e9d571f7df3e04291deb)
+        ;
+
+        
+    
+    
+            var circle_marker_eaa118fb7a356fa8994d18ac4c722d5d = L.circleMarker(
+                [1.310759, 103.866262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.72}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2717723056991008fbf90cfb59b80263 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_987d5b74f8ecc63d3d957c210e1f4206 = $(`<div id="html_987d5b74f8ecc63d3d957c210e1f4206" style="width: 100.0%; height: 100.0%;">Kallang, Singapore</div>`)[0];
+                popup_2717723056991008fbf90cfb59b80263.setContent(html_987d5b74f8ecc63d3d957c210e1f4206);
+            
+        
+
+        circle_marker_eaa118fb7a356fa8994d18ac4c722d5d.bindPopup(popup_2717723056991008fbf90cfb59b80263)
+        ;
+
+        
+    
+    
+            var circle_marker_b720596f69a3f8cc993b033ac6ed9b79 = L.circleMarker(
+                [39.100105, -94.5781416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_913160b88ed89da03d5e92596e8d407c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24b11abf75e45d915437eda3c5f495f2 = $(`<div id="html_24b11abf75e45d915437eda3c5f495f2" style="width: 100.0%; height: 100.0%;">Kansas City, Missouri, USA</div>`)[0];
+                popup_913160b88ed89da03d5e92596e8d407c.setContent(html_24b11abf75e45d915437eda3c5f495f2);
+            
+        
+
+        circle_marker_b720596f69a3f8cc993b033ac6ed9b79.bindPopup(popup_913160b88ed89da03d5e92596e8d407c)
+        ;
+
+        
+    
+    
+            var circle_marker_79f0458af2de2a69436c385050590638 = L.circleMarker(
+                [31.1171441, -97.727796],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_3c2ed19a5311d21739625bc0eddbd593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b9f7e06a1b14ca7dfea571484101502 = $(`<div id="html_5b9f7e06a1b14ca7dfea571484101502" style="width: 100.0%; height: 100.0%;">Killeen, Texas, USA</div>`)[0];
+                popup_3c2ed19a5311d21739625bc0eddbd593.setContent(html_5b9f7e06a1b14ca7dfea571484101502);
+            
+        
+
+        circle_marker_79f0458af2de2a69436c385050590638.bindPopup(popup_3c2ed19a5311d21739625bc0eddbd593)
+        ;
+
+        
+    
+    
+            var circle_marker_2fe76dee48f3692ec5e60e2266984c72 = L.circleMarker(
+                [50.0619474, 19.9368564],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_8dc7ea478c1f9442b092e76124db0404 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a3b7e68a37699a0efcc194bb7d956b9 = $(`<div id="html_5a3b7e68a37699a0efcc194bb7d956b9" style="width: 100.0%; height: 100.0%;">Krakow, Poland</div>`)[0];
+                popup_8dc7ea478c1f9442b092e76124db0404.setContent(html_5a3b7e68a37699a0efcc194bb7d956b9);
+            
+        
+
+        circle_marker_2fe76dee48f3692ec5e60e2266984c72.bindPopup(popup_8dc7ea478c1f9442b092e76124db0404)
+        ;
+
+        
+    
+    
+            var circle_marker_b39e0a154fde8c83e01bd8acfa8e3cbd = L.circleMarker(
+                [30.2072293, -93.2061609],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.375, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.3}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_9419f72dae931965864ce1d4a92c3011 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da455e9ebb222977a088654856cc3b26 = $(`<div id="html_da455e9ebb222977a088654856cc3b26" style="width: 100.0%; height: 100.0%;">Lake Charles, Louisiana, USA</div>`)[0];
+                popup_9419f72dae931965864ce1d4a92c3011.setContent(html_da455e9ebb222977a088654856cc3b26);
+            
+        
+
+        circle_marker_b39e0a154fde8c83e01bd8acfa8e3cbd.bindPopup(popup_9419f72dae931965864ce1d4a92c3011)
+        ;
+
+        
+    
+    
+            var circle_marker_32a9f45b7c5dc1b5dd491b888a4df49d = L.circleMarker(
+                [36.1672559, -115.148516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 39.125, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 31.3}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ca239a4b3359eb4902e59a5acd2f990b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd0ef0f02aaff67f8a2e760e5c825a79 = $(`<div id="html_bd0ef0f02aaff67f8a2e760e5c825a79" style="width: 100.0%; height: 100.0%;">Las Vegas, Nevada, USA</div>`)[0];
+                popup_ca239a4b3359eb4902e59a5acd2f990b.setContent(html_bd0ef0f02aaff67f8a2e760e5c825a79);
+            
+        
+
+        circle_marker_32a9f45b7c5dc1b5dd491b888a4df49d.bindPopup(popup_ca239a4b3359eb4902e59a5acd2f990b)
+        ;
+
+        
+    
+    
+            var circle_marker_f24ef09ae6b22e4512dc7dc3e1595e50 = L.circleMarker(
+                [41.4386053, -72.0175193],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.225, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.18}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_cc35440d882794fed0ea1a47f9d48ddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf9b314f2b81ad2f8d3779c4bd964c74 = $(`<div id="html_cf9b314f2b81ad2f8d3779c4bd964c74" style="width: 100.0%; height: 100.0%;">Ledyard, Connecticut, USA</div>`)[0];
+                popup_cc35440d882794fed0ea1a47f9d48ddf.setContent(html_cf9b314f2b81ad2f8d3779c4bd964c74);
+            
+        
+
+        circle_marker_f24ef09ae6b22e4512dc7dc3e1595e50.bindPopup(popup_cc35440d882794fed0ea1a47f9d48ddf)
+        ;
+
+        
+    
+    
+            var circle_marker_590780d2d1b568895ad448355b97934c = L.circleMarker(
+                [40.8088861, -96.7077751],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_da03a22ba71aebdea990b8ce7561bc0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a82b7b45c72b96aee34ecb9385f9a78c = $(`<div id="html_a82b7b45c72b96aee34ecb9385f9a78c" style="width: 100.0%; height: 100.0%;">Lincoln, Nebraska, USA</div>`)[0];
+                popup_da03a22ba71aebdea990b8ce7561bc0c.setContent(html_a82b7b45c72b96aee34ecb9385f9a78c);
+            
+        
+
+        circle_marker_590780d2d1b568895ad448355b97934c.bindPopup(popup_da03a22ba71aebdea990b8ce7561bc0c)
+        ;
+
+        
+    
+    
+            var circle_marker_aba0c0f01bc8b8314dbe93ef0264361f = L.circleMarker(
+                [53.4071991, -2.99168],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_524385a1795f82232f1e8c5fe3a92c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf8a6f5a94992a071b41095bea1ae80c = $(`<div id="html_bf8a6f5a94992a071b41095bea1ae80c" style="width: 100.0%; height: 100.0%;">Liverpool, England, United Kingdom</div>`)[0];
+                popup_524385a1795f82232f1e8c5fe3a92c93.setContent(html_bf8a6f5a94992a071b41095bea1ae80c);
+            
+        
+
+        circle_marker_aba0c0f01bc8b8314dbe93ef0264361f.bindPopup(popup_524385a1795f82232f1e8c5fe3a92c93)
+        ;
+
+        
+    
+    
+            var circle_marker_459159a75ec16281f519ba9394fc248e = L.circleMarker(
+                [51.5073219, -0.1276474],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 2.28}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_76ef763838c283d4216260938e667feb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb59aef043be8b2a79e9b1bca2f3ce3 = $(`<div id="html_4cb59aef043be8b2a79e9b1bca2f3ce3" style="width: 100.0%; height: 100.0%;">London, England, United Kingdom</div>`)[0];
+                popup_76ef763838c283d4216260938e667feb.setContent(html_4cb59aef043be8b2a79e9b1bca2f3ce3);
+            
+        
+
+        circle_marker_459159a75ec16281f519ba9394fc248e.bindPopup(popup_76ef763838c283d4216260938e667feb)
+        ;
+
+        
+    
+    
+            var circle_marker_f1f099619345ad4198d5f40bcd146fd9 = L.circleMarker(
+                [34.0536909, -118.242766],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.975, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.58}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c093a8205a25578fbccceac8366efefe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d194b9077a18e93664eb5e02f95cc43 = $(`<div id="html_9d194b9077a18e93664eb5e02f95cc43" style="width: 100.0%; height: 100.0%;">Los Angeles, California, USA</div>`)[0];
+                popup_c093a8205a25578fbccceac8366efefe.setContent(html_9d194b9077a18e93664eb5e02f95cc43);
+            
+        
+
+        circle_marker_f1f099619345ad4198d5f40bcd146fd9.bindPopup(popup_c093a8205a25578fbccceac8366efefe)
+        ;
+
+        
+    
+    
+            var circle_marker_366b16283341153ee10111ad520a3a69 = L.circleMarker(
+                [38.2542376, -85.759407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_0542a31f996ef89ba3e18d581336ac5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b4ea0421f257c98adead55bb0ce5ce7 = $(`<div id="html_4b4ea0421f257c98adead55bb0ce5ce7" style="width: 100.0%; height: 100.0%;">Louisville, Kentucky, USA</div>`)[0];
+                popup_0542a31f996ef89ba3e18d581336ac5f.setContent(html_4b4ea0421f257c98adead55bb0ce5ce7);
+            
+        
+
+        circle_marker_366b16283341153ee10111ad520a3a69.bindPopup(popup_0542a31f996ef89ba3e18d581336ac5f)
+        ;
+
+        
+    
+    
+            var circle_marker_3d8d6a8c9288ec3aa393e4a41a4458fe = L.circleMarker(
+                [22.1899448, 113.5380454],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.675, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.54}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_5123150b5f026f90c099b83773fa5041 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0029c684a464588d140641aec257684f = $(`<div id="html_0029c684a464588d140641aec257684f" style="width: 100.0%; height: 100.0%;">Macau, China</div>`)[0];
+                popup_5123150b5f026f90c099b83773fa5041.setContent(html_0029c684a464588d140641aec257684f);
+            
+        
+
+        circle_marker_3d8d6a8c9288ec3aa393e4a41a4458fe.bindPopup(popup_5123150b5f026f90c099b83773fa5041)
+        ;
+
+        
+    
+    
+            var circle_marker_97207f43385449235e24d72a4eb05580 = L.circleMarker(
+                [53.4794892, -2.2451148],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.88}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a7be2d03d30c049209ff9bb742c4769a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d8ff6b88f6aa248074c3de1368b393 = $(`<div id="html_93d8ff6b88f6aa248074c3de1368b393" style="width: 100.0%; height: 100.0%;">Manchester, England, United Kingdom</div>`)[0];
+                popup_a7be2d03d30c049209ff9bb742c4769a.setContent(html_93d8ff6b88f6aa248074c3de1368b393);
+            
+        
+
+        circle_marker_97207f43385449235e24d72a4eb05580.bindPopup(popup_a7be2d03d30c049209ff9bb742c4769a)
+        ;
+
+        
+    
+    
+            var circle_marker_1a29949dca3e2314c10558804af31872 = L.circleMarker(
+                [14.5948914, 120.9782618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d211d2ef711aa1a6f74736a9ed1978a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a33af74e1a33babea83bb2a35da2d0b8 = $(`<div id="html_a33af74e1a33babea83bb2a35da2d0b8" style="width: 100.0%; height: 100.0%;">Manila, Philippines</div>`)[0];
+                popup_d211d2ef711aa1a6f74736a9ed1978a6.setContent(html_a33af74e1a33babea83bb2a35da2d0b8);
+            
+        
+
+        circle_marker_1a29949dca3e2314c10558804af31872.bindPopup(popup_d211d2ef711aa1a6f74736a9ed1978a6)
+        ;
+
+        
+    
+    
+            var circle_marker_b4531bb08954045f0d91a745628410fa = L.circleMarker(
+                [-37.8142176, 144.9631608],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.96}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_b8de39313dbb0866dcd713d8811bd6cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a74885683933dd73656390e2a8503d = $(`<div id="html_b4a74885683933dd73656390e2a8503d" style="width: 100.0%; height: 100.0%;">Melbourne, Victoria, Australia</div>`)[0];
+                popup_b8de39313dbb0866dcd713d8811bd6cd.setContent(html_b4a74885683933dd73656390e2a8503d);
+            
+        
+
+        circle_marker_b4531bb08954045f0d91a745628410fa.bindPopup(popup_b8de39313dbb0866dcd713d8811bd6cd)
+        ;
+
+        
+    
+    
+            var circle_marker_424954a3c27cd61974b27e79645fd747 = L.circleMarker(
+                [35.1460249, -90.0517638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_3b42c425f5eab160ff011468740cfc5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcee326abbbc1f58e8fc375554a1818d = $(`<div id="html_fcee326abbbc1f58e8fc375554a1818d" style="width: 100.0%; height: 100.0%;">Memphis, Tennessee, USA</div>`)[0];
+                popup_3b42c425f5eab160ff011468740cfc5e.setContent(html_fcee326abbbc1f58e8fc375554a1818d);
+            
+        
+
+        circle_marker_424954a3c27cd61974b27e79645fd747.bindPopup(popup_3b42c425f5eab160ff011468740cfc5e)
+        ;
+
+        
+    
+    
+            var circle_marker_797be471a5c86b1b3fbf3812414a97c8 = L.circleMarker(
+                [19.4239552, -99.1757289],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.475, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.18}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_dc55adaf67d23fb35e74b82261bc1618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a1717ae607e0cfb64b5d642e0f7eeb8 = $(`<div id="html_9a1717ae607e0cfb64b5d642e0f7eeb8" style="width: 100.0%; height: 100.0%;">Mexico City, Distrito Federal, Mexico</div>`)[0];
+                popup_dc55adaf67d23fb35e74b82261bc1618.setContent(html_9a1717ae607e0cfb64b5d642e0f7eeb8);
+            
+        
+
+        circle_marker_797be471a5c86b1b3fbf3812414a97c8.bindPopup(popup_dc55adaf67d23fb35e74b82261bc1618)
+        ;
+
+        
+    
+    
+            var circle_marker_b063e3e4e167377f8a6e420d9354312e = L.circleMarker(
+                [25.7741728, -80.19362],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.16}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_dc37538220f80d228e212903ec6b8d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3241a061aeb478e7ca4f247540f9eb5c = $(`<div id="html_3241a061aeb478e7ca4f247540f9eb5c" style="width: 100.0%; height: 100.0%;">Miami, Florida, USA</div>`)[0];
+                popup_dc37538220f80d228e212903ec6b8d0c.setContent(html_3241a061aeb478e7ca4f247540f9eb5c);
+            
+        
+
+        circle_marker_b063e3e4e167377f8a6e420d9354312e.bindPopup(popup_dc37538220f80d228e212903ec6b8d0c)
+        ;
+
+        
+    
+    
+            var circle_marker_b8e5a686f0a4ac961154e24f02b42c05 = L.circleMarker(
+                [43.0349931, -87.922497],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.72}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ddc8415c87355493e8c211e9150095ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b0debe5814403b0735ce174da76d71 = $(`<div id="html_61b0debe5814403b0735ce174da76d71" style="width: 100.0%; height: 100.0%;">Milwaukee, Wisconsin, USA</div>`)[0];
+                popup_ddc8415c87355493e8c211e9150095ca.setContent(html_61b0debe5814403b0735ce174da76d71);
+            
+        
+
+        circle_marker_b8e5a686f0a4ac961154e24f02b42c05.bindPopup(popup_ddc8415c87355493e8c211e9150095ca)
+        ;
+
+        
+    
+    
+            var circle_marker_b8db5065154e65a0764936531166b502 = L.circleMarker(
+                [44.9772995, -93.2654692],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.64}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d4317b7616265ac796c1a1be7ed9f074 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b04d697fc14253bfa8ab9aa100fb1da1 = $(`<div id="html_b04d697fc14253bfa8ab9aa100fb1da1" style="width: 100.0%; height: 100.0%;">Minneapolis, Minnesota, USA</div>`)[0];
+                popup_d4317b7616265ac796c1a1be7ed9f074.setContent(html_b04d697fc14253bfa8ab9aa100fb1da1);
+            
+        
+
+        circle_marker_b8db5065154e65a0764936531166b502.bindPopup(popup_d4317b7616265ac796c1a1be7ed9f074)
+        ;
+
+        
+    
+    
+            var circle_marker_6a4bc92adadb609e3d9c40dc9732fbcc = L.circleMarker(
+                [30.6867339, -88.0848929],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.16}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_5c34090ab3620fcaef1dcc4419ef30a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f252c0fe7a58e6ec316c6e904ef7c202 = $(`<div id="html_f252c0fe7a58e6ec316c6e904ef7c202" style="width: 100.0%; height: 100.0%;">Mobile, Alabama, USA</div>`)[0];
+                popup_5c34090ab3620fcaef1dcc4419ef30a6.setContent(html_f252c0fe7a58e6ec316c6e904ef7c202);
+            
+        
+
+        circle_marker_6a4bc92adadb609e3d9c40dc9732fbcc.bindPopup(popup_5c34090ab3620fcaef1dcc4419ef30a6)
+        ;
+
+        
+    
+    
+            var circle_marker_975f77799699c6b323db2a7457e72401 = L.circleMarker(
+                [46.097995, -64.80011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_7a2c1e5b2b4748493c04943496c38938 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47f898f51414cdc921d03801580d14df = $(`<div id="html_47f898f51414cdc921d03801580d14df" style="width: 100.0%; height: 100.0%;">Moncton, New Brunswick, Canada</div>`)[0];
+                popup_7a2c1e5b2b4748493c04943496c38938.setContent(html_47f898f51414cdc921d03801580d14df);
+            
+        
+
+        circle_marker_975f77799699c6b323db2a7457e72401.bindPopup(popup_7a2c1e5b2b4748493c04943496c38938)
+        ;
+
+        
+    
+    
+            var circle_marker_050762d3139fb5a541733dd430462c73 = L.circleMarker(
+                [25.6802019, -100.315258],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6785c28e0450cb06259812e561d800a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6d717ad4c0cf8f29aabebff42ee4882 = $(`<div id="html_e6d717ad4c0cf8f29aabebff42ee4882" style="width: 100.0%; height: 100.0%;">Monterrey, Nuevo Leon, Mexico</div>`)[0];
+                popup_6785c28e0450cb06259812e561d800a7.setContent(html_e6d717ad4c0cf8f29aabebff42ee4882);
+            
+        
+
+        circle_marker_050762d3139fb5a541733dd430462c73.bindPopup(popup_6785c28e0450cb06259812e561d800a7)
+        ;
+
+        
+    
+    
+            var circle_marker_c94dbe5c4405e254fb2e4ed903613a53 = L.circleMarker(
+                [-34.9058916, -56.1913095],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a650c2313a49209e9ae0452ce424abfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13852e22cb09f42c63b57611501ee6c3 = $(`<div id="html_13852e22cb09f42c63b57611501ee6c3" style="width: 100.0%; height: 100.0%;">Montevideo, Uruguay</div>`)[0];
+                popup_a650c2313a49209e9ae0452ce424abfd.setContent(html_13852e22cb09f42c63b57611501ee6c3);
+            
+        
+
+        circle_marker_c94dbe5c4405e254fb2e4ed903613a53.bindPopup(popup_a650c2313a49209e9ae0452ce424abfd)
+        ;
+
+        
+    
+    
+            var circle_marker_079d430335dce6fe8035904154577e2e = L.circleMarker(
+                [45.5031824, -73.5698065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.025, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.62}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_088678347387a39c9dfeea94539d952a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5ea3ae3dee9ebaae14d743f941ed509 = $(`<div id="html_c5ea3ae3dee9ebaae14d743f941ed509" style="width: 100.0%; height: 100.0%;">Montreal, Quebec, Canada</div>`)[0];
+                popup_088678347387a39c9dfeea94539d952a.setContent(html_c5ea3ae3dee9ebaae14d743f941ed509);
+            
+        
+
+        circle_marker_079d430335dce6fe8035904154577e2e.bindPopup(popup_088678347387a39c9dfeea94539d952a)
+        ;
+
+        
+    
+    
+            var circle_marker_64c6875ab5700076b2c7b922a09c8536 = L.circleMarker(
+                [55.7504461, 37.6174943],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_7b4bc8db0aa64f0eb174af13466ea178 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d502740e2e0e63186a1e13336dddf517 = $(`<div id="html_d502740e2e0e63186a1e13336dddf517" style="width: 100.0%; height: 100.0%;">Moscow, Moscow, Russia</div>`)[0];
+                popup_7b4bc8db0aa64f0eb174af13466ea178.setContent(html_d502740e2e0e63186a1e13336dddf517);
+            
+        
+
+        circle_marker_64c6875ab5700076b2c7b922a09c8536.bindPopup(popup_7b4bc8db0aa64f0eb174af13466ea178)
+        ;
+
+        
+    
+    
+            var circle_marker_a2528a461295c0f6e400cadda3da7755 = L.circleMarker(
+                [36.1622767, -86.7742984],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.475, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.18}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_f7a9efd751e6751d4f892fff8d88594a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b6ca7547d66ab676264c68a87d756ff = $(`<div id="html_0b6ca7547d66ab676264c68a87d756ff" style="width: 100.0%; height: 100.0%;">Nashville, Tennessee, USA</div>`)[0];
+                popup_f7a9efd751e6751d4f892fff8d88594a.setContent(html_0b6ca7547d66ab676264c68a87d756ff);
+            
+        
+
+        circle_marker_a2528a461295c0f6e400cadda3da7755.bindPopup(popup_f7a9efd751e6751d4f892fff8d88594a)
+        ;
+
+        
+    
+    
+            var circle_marker_bd32115b18a59bad4d6ad4fe4dd4a13d = L.circleMarker(
+                [-5.805398, -35.2080905],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d6d919d3969e99e1acb5e568c87b8835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5906fd6705dad161d78e8e8b16fb8946 = $(`<div id="html_5906fd6705dad161d78e8e8b16fb8946" style="width: 100.0%; height: 100.0%;">Natal, Rio Grande do Norte, Brazil</div>`)[0];
+                popup_d6d919d3969e99e1acb5e568c87b8835.setContent(html_5906fd6705dad161d78e8e8b16fb8946);
+            
+        
+
+        circle_marker_bd32115b18a59bad4d6ad4fe4dd4a13d.bindPopup(popup_d6d919d3969e99e1acb5e568c87b8835)
+        ;
+
+        
+    
+    
+            var circle_marker_a9d11df9d493ee9dbf8bf0c698d71e2c = L.circleMarker(
+                [29.9759983, -90.0782127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.125, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.9}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_36f89445a553e2d307f51738cab154db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f69db69b51a0da503e06fd9b3bda62b1 = $(`<div id="html_f69db69b51a0da503e06fd9b3bda62b1" style="width: 100.0%; height: 100.0%;">New Orleans, Louisiana, USA</div>`)[0];
+                popup_36f89445a553e2d307f51738cab154db.setContent(html_f69db69b51a0da503e06fd9b3bda62b1);
+            
+        
+
+        circle_marker_a9d11df9d493ee9dbf8bf0c698d71e2c.bindPopup(popup_36f89445a553e2d307f51738cab154db)
+        ;
+
+        
+    
+    
+            var circle_marker_c8bbb6f0d972a12d6695669788cf788f = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.92}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_da7ecc9f0f3ff342b96f16dd92ce99a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef5a01890183df520175b1ced338296c = $(`<div id="html_ef5a01890183df520175b1ced338296c" style="width: 100.0%; height: 100.0%;">New York City, New York, USA</div>`)[0];
+                popup_da7ecc9f0f3ff342b96f16dd92ce99a5.setContent(html_ef5a01890183df520175b1ced338296c);
+            
+        
+
+        circle_marker_c8bbb6f0d972a12d6695669788cf788f.bindPopup(popup_da7ecc9f0f3ff342b96f16dd92ce99a5)
+        ;
+
+        
+    
+    
+            var circle_marker_08802303b2948b2bdbebbf686060d293 = L.circleMarker(
+                [40.735657, -74.1723667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 2.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.8}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_69bfa16b612b17f2bc2a47cc9205dec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33311d4c15c1289147a45f40720de9e4 = $(`<div id="html_33311d4c15c1289147a45f40720de9e4" style="width: 100.0%; height: 100.0%;">Newark, New Jersey, USA</div>`)[0];
+                popup_69bfa16b612b17f2bc2a47cc9205dec1.setContent(html_33311d4c15c1289147a45f40720de9e4);
+            
+        
+
+        circle_marker_08802303b2948b2bdbebbf686060d293.bindPopup(popup_69bfa16b612b17f2bc2a47cc9205dec1)
+        ;
+
+        
+    
+    
+            var circle_marker_cd0626864a62000952c38f3c5402204d = L.circleMarker(
+                [54.9738474, -1.6131572],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.225, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.18}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_4993f7890af4ecfe4c66fae2c6130ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b9ecd423adaba1ce0c448520ee0c873 = $(`<div id="html_1b9ecd423adaba1ce0c448520ee0c873" style="width: 100.0%; height: 100.0%;">Newcastle, England, United Kingdom</div>`)[0];
+                popup_4993f7890af4ecfe4c66fae2c6130ec8.setContent(html_1b9ecd423adaba1ce0c448520ee0c873);
+            
+        
+
+        circle_marker_cd0626864a62000952c38f3c5402204d.bindPopup(popup_4993f7890af4ecfe4c66fae2c6130ec8)
+        ;
+
+        
+    
+    
+            var circle_marker_fc470d829c9e024fad9833c7a462113f = L.circleMarker(
+                [36.8968052, -76.2602336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_10e8be16c6a4a7665d0b942e0e6dfdf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e873680751d1bec31382f51ea8ec117d = $(`<div id="html_e873680751d1bec31382f51ea8ec117d" style="width: 100.0%; height: 100.0%;">Norfolk, Virginia, USA</div>`)[0];
+                popup_10e8be16c6a4a7665d0b942e0e6dfdf0.setContent(html_e873680751d1bec31382f51ea8ec117d);
+            
+        
+
+        circle_marker_fc470d829c9e024fad9833c7a462113f.bindPopup(popup_10e8be16c6a4a7665d0b942e0e6dfdf0)
+        ;
+
+        
+    
+    
+            var circle_marker_69079763e0237ffaa31b4763df4fc573 = L.circleMarker(
+                [52.9534193, -1.1496461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a751770d7cd05d1833f1ac15b3e125a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec2ba2489808d7151d57f757a92fc1a9 = $(`<div id="html_ec2ba2489808d7151d57f757a92fc1a9" style="width: 100.0%; height: 100.0%;">Nottingham, England, United Kingdom</div>`)[0];
+                popup_a751770d7cd05d1833f1ac15b3e125a1.setContent(html_ec2ba2489808d7151d57f757a92fc1a9);
+            
+        
+
+        circle_marker_69079763e0237ffaa31b4763df4fc573.bindPopup(popup_a751770d7cd05d1833f1ac15b3e125a1)
+        ;
+
+        
+    
+    
+            var circle_marker_c82936968846cb2abcf21fb45997b2fa = L.circleMarker(
+                [37.8044557, -122.271356],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d8a73e80e41e08f2b1e2b3126bebd6f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65a203d7ad43a3f6a45084ce944d97d5 = $(`<div id="html_65a203d7ad43a3f6a45084ce944d97d5" style="width: 100.0%; height: 100.0%;">Oakland, California, USA</div>`)[0];
+                popup_d8a73e80e41e08f2b1e2b3126bebd6f1.setContent(html_65a203d7ad43a3f6a45084ce944d97d5);
+            
+        
+
+        circle_marker_c82936968846cb2abcf21fb45997b2fa.bindPopup(popup_d8a73e80e41e08f2b1e2b3126bebd6f1)
+        ;
+
+        
+    
+    
+            var circle_marker_cc141f064ded0669ca2d124d8881929c = L.circleMarker(
+                [51.4696137, 6.8514435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_e269b7634f48c91d8dd300cdb769e710 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb3421e9e03e1bd7396e18b97ad0d124 = $(`<div id="html_fb3421e9e03e1bd7396e18b97ad0d124" style="width: 100.0%; height: 100.0%;">Oberhausen, North Rhine-Westphalia, Germany</div>`)[0];
+                popup_e269b7634f48c91d8dd300cdb769e710.setContent(html_fb3421e9e03e1bd7396e18b97ad0d124);
+            
+        
+
+        circle_marker_cc141f064ded0669ca2d124d8881929c.bindPopup(popup_e269b7634f48c91d8dd300cdb769e710)
+        ;
+
+        
+    
+    
+            var circle_marker_5af0af4381a65df981179c8fdf2a0385 = L.circleMarker(
+                [35.4729886, -97.5170536],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a43b8324e6db3f0a947c7502e1822b8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbde2aec65a09c29e550b0b4c873c53f = $(`<div id="html_cbde2aec65a09c29e550b0b4c873c53f" style="width: 100.0%; height: 100.0%;">Oklahoma City, Oklahoma, USA</div>`)[0];
+                popup_a43b8324e6db3f0a947c7502e1822b8c.setContent(html_cbde2aec65a09c29e550b0b4c873c53f);
+            
+        
+
+        circle_marker_5af0af4381a65df981179c8fdf2a0385.bindPopup(popup_a43b8324e6db3f0a947c7502e1822b8c)
+        ;
+
+        
+    
+    
+            var circle_marker_ac5d028279c1b0cac72ed3bba92c6e2b = L.circleMarker(
+                [41.2587459, -95.9383758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.475, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.38}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a73f7eb192602cafbb6e2b654c2bac97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8eb9e775d83943cc13b9fde1b60f3f3 = $(`<div id="html_d8eb9e775d83943cc13b9fde1b60f3f3" style="width: 100.0%; height: 100.0%;">Omaha, Nebraska, USA</div>`)[0];
+                popup_a73f7eb192602cafbb6e2b654c2bac97.setContent(html_d8eb9e775d83943cc13b9fde1b60f3f3);
+            
+        
+
+        circle_marker_ac5d028279c1b0cac72ed3bba92c6e2b.bindPopup(popup_a73f7eb192602cafbb6e2b654c2bac97)
+        ;
+
+        
+    
+    
+            var circle_marker_3169fbacaf896141e79cdb79c3057477 = L.circleMarker(
+                [28.5421109, -81.3790304],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.76}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_76e78a09bf60bd68eecbda1b093de5ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1b8e8ceefff9b6c9c27bd04761449af = $(`<div id="html_e1b8e8ceefff9b6c9c27bd04761449af" style="width: 100.0%; height: 100.0%;">Orlando, Florida, USA</div>`)[0];
+                popup_76e78a09bf60bd68eecbda1b093de5ae.setContent(html_e1b8e8ceefff9b6c9c27bd04761449af);
+            
+        
+
+        circle_marker_3169fbacaf896141e79cdb79c3057477.bindPopup(popup_76e78a09bf60bd68eecbda1b093de5ae)
+        ;
+
+        
+    
+    
+            var circle_marker_a069fd1f9661682f210dd2996bafc888 = L.circleMarker(
+                [45.4208777, -75.6901106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c001e130cc5a3e5d66179df1947c1414 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99ef04dc2020ac37bbcdb7f6481f023c = $(`<div id="html_99ef04dc2020ac37bbcdb7f6481f023c" style="width: 100.0%; height: 100.0%;">Ottawa, Ontario, Canada</div>`)[0];
+                popup_c001e130cc5a3e5d66179df1947c1414.setContent(html_99ef04dc2020ac37bbcdb7f6481f023c);
+            
+        
+
+        circle_marker_a069fd1f9661682f210dd2996bafc888.bindPopup(popup_c001e130cc5a3e5d66179df1947c1414)
+        ;
+
+        
+    
+    
+            var circle_marker_1c681ed9718187842adfd3129ce1584b = L.circleMarker(
+                [-31.9558964, 115.8605801],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_aa0a0e983058b5f37556393575a5db98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4344fbfa70b0c5f3ae900052de2efbef = $(`<div id="html_4344fbfa70b0c5f3ae900052de2efbef" style="width: 100.0%; height: 100.0%;">Perth, Western Australia, Australia</div>`)[0];
+                popup_aa0a0e983058b5f37556393575a5db98.setContent(html_4344fbfa70b0c5f3ae900052de2efbef);
+            
+        
+
+        circle_marker_1c681ed9718187842adfd3129ce1584b.bindPopup(popup_aa0a0e983058b5f37556393575a5db98)
+        ;
+
+        
+    
+    
+            var circle_marker_e26d26e794ced244a68798a7ea661d62 = L.circleMarker(
+                [39.9527237, -75.1635262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.875, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.7}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_11f2698aedd785ea8ccb9f8f71e425f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32f0a3a5a69011104af3b44070981315 = $(`<div id="html_32f0a3a5a69011104af3b44070981315" style="width: 100.0%; height: 100.0%;">Philadelphia, Pennsylvania, USA</div>`)[0];
+                popup_11f2698aedd785ea8ccb9f8f71e425f3.setContent(html_32f0a3a5a69011104af3b44070981315);
+            
+        
+
+        circle_marker_e26d26e794ced244a68798a7ea661d62.bindPopup(popup_11f2698aedd785ea8ccb9f8f71e425f3)
+        ;
+
+        
+    
+    
+            var circle_marker_0729371246a9ad71bc50f6e4a24351dd = L.circleMarker(
+                [33.4484367, -112.074141],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.72}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_226922832ffe358fa6d0af84acf2c145 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb028c1d07391cf9c9cbb26c7af45926 = $(`<div id="html_cb028c1d07391cf9c9cbb26c7af45926" style="width: 100.0%; height: 100.0%;">Phoenix, Arizona, USA</div>`)[0];
+                popup_226922832ffe358fa6d0af84acf2c145.setContent(html_cb028c1d07391cf9c9cbb26c7af45926);
+            
+        
+
+        circle_marker_0729371246a9ad71bc50f6e4a24351dd.bindPopup(popup_226922832ffe358fa6d0af84acf2c145)
+        ;
+
+        
+    
+    
+            var circle_marker_4100f03fba3916fe69d128a843a72205 = L.circleMarker(
+                [40.4416941, -79.9900861],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.68}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_6a90ec303086874c042d6de02f516f9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9402a8575739c71fd0f4ac60706a8d06 = $(`<div id="html_9402a8575739c71fd0f4ac60706a8d06" style="width: 100.0%; height: 100.0%;">Pittsburgh, Pennsylvania, USA</div>`)[0];
+                popup_6a90ec303086874c042d6de02f516f9d.setContent(html_9402a8575739c71fd0f4ac60706a8d06);
+            
+        
+
+        circle_marker_4100f03fba3916fe69d128a843a72205.bindPopup(popup_6a90ec303086874c042d6de02f516f9d)
+        ;
+
+        
+    
+    
+            var circle_marker_6979e205885e837ff5064f3771096b2c = L.circleMarker(
+                [45.5202471, -122.674194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.46}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_33e5d2834fbb61955fd464f2548ca143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c444b8892327f5e8547c7189fcde70a = $(`<div id="html_2c444b8892327f5e8547c7189fcde70a" style="width: 100.0%; height: 100.0%;">Portland, Oregon, USA</div>`)[0];
+                popup_33e5d2834fbb61955fd464f2548ca143.setContent(html_2c444b8892327f5e8547c7189fcde70a);
+            
+        
+
+        circle_marker_6979e205885e837ff5064f3771096b2c.bindPopup(popup_33e5d2834fbb61955fd464f2548ca143)
+        ;
+
+        
+    
+    
+            var circle_marker_d606d1526ae9914ea0e086c13d0860e3 = L.circleMarker(
+                [-30.0324999, -51.2303767],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_aae98fd2d6c0f60558d483b744c6346d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6a5217912c4209981a610e634264b39 = $(`<div id="html_f6a5217912c4209981a610e634264b39" style="width: 100.0%; height: 100.0%;">Porto Alegre, Rio Grande do Sul, Brazil</div>`)[0];
+                popup_aae98fd2d6c0f60558d483b744c6346d.setContent(html_f6a5217912c4209981a610e634264b39);
+            
+        
+
+        circle_marker_d606d1526ae9914ea0e086c13d0860e3.bindPopup(popup_aae98fd2d6c0f60558d483b744c6346d)
+        ;
+
+        
+    
+    
+            var circle_marker_61f1effbd563a14ffbeb0d0c060fe4d9 = L.circleMarker(
+                [50.0596288, 14.446459273258007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_03a5e5bd0be8da7bd4ac270a63155282 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58f217d6d459c94759b882793c580cc0 = $(`<div id="html_58f217d6d459c94759b882793c580cc0" style="width: 100.0%; height: 100.0%;">Prague, Czech Republic</div>`)[0];
+                popup_03a5e5bd0be8da7bd4ac270a63155282.setContent(html_58f217d6d459c94759b882793c580cc0);
+            
+        
+
+        circle_marker_61f1effbd563a14ffbeb0d0c060fe4d9.bindPopup(popup_03a5e5bd0be8da7bd4ac270a63155282)
+        ;
+
+        
+    
+    
+            var circle_marker_08b4bf6c849a4ff3efd480507bbbcfc0 = L.circleMarker(
+                [46.79217485, -71.38577821056776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ea867acf47397df80ef2e3179d1a4671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c39141de0c2c59fb9b27eeab5caa9fb = $(`<div id="html_4c39141de0c2c59fb9b27eeab5caa9fb" style="width: 100.0%; height: 100.0%;">Quebec City, Quebec, Canada</div>`)[0];
+                popup_ea867acf47397df80ef2e3179d1a4671.setContent(html_4c39141de0c2c59fb9b27eeab5caa9fb);
+            
+        
+
+        circle_marker_08b4bf6c849a4ff3efd480507bbbcfc0.bindPopup(popup_ea867acf47397df80ef2e3179d1a4671)
+        ;
+
+        
+    
+    
+            var circle_marker_94d01b0c91b6384a57dd5e8daac92f05 = L.circleMarker(
+                [35.7803977, -78.6390989],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_4893ed00a04c66e9790f847ad44c498f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c060d6240cc4133c8d37a2d15363bbe = $(`<div id="html_8c060d6240cc4133c8d37a2d15363bbe" style="width: 100.0%; height: 100.0%;">Raleigh, North Carolina, USA</div>`)[0];
+                popup_4893ed00a04c66e9790f847ad44c498f.setContent(html_8c060d6240cc4133c8d37a2d15363bbe);
+            
+        
+
+        circle_marker_94d01b0c91b6384a57dd5e8daac92f05.bindPopup(popup_4893ed00a04c66e9790f847ad44c498f)
+        ;
+
+        
+    
+    
+            var circle_marker_e1dae4ce098815528b6a592aa5ca1e35 = L.circleMarker(
+                [35.269381, -106.632819],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_9e3814763e2ab596e6f8c698b15f7c7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_678264cf562714d1736b0f7396adf6e5 = $(`<div id="html_678264cf562714d1736b0f7396adf6e5" style="width: 100.0%; height: 100.0%;">Rio Rancho, New Mexico, USA</div>`)[0];
+                popup_9e3814763e2ab596e6f8c698b15f7c7d.setContent(html_678264cf562714d1736b0f7396adf6e5);
+            
+        
+
+        circle_marker_e1dae4ce098815528b6a592aa5ca1e35.bindPopup(popup_9e3814763e2ab596e6f8c698b15f7c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_b07ec04046261eabeb96a228fe3eae4e = L.circleMarker(
+                [-22.9110137, -43.2093727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.725, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.38}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_92f9fd97d5c3051acc2a4f251392a40b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0cc261cb634c89a82b49be3810d5bb2 = $(`<div id="html_e0cc261cb634c89a82b49be3810d5bb2" style="width: 100.0%; height: 100.0%;">Rio de Janeiro, Brazil</div>`)[0];
+                popup_92f9fd97d5c3051acc2a4f251392a40b.setContent(html_e0cc261cb634c89a82b49be3810d5bb2);
+            
+        
+
+        circle_marker_b07ec04046261eabeb96a228fe3eae4e.bindPopup(popup_92f9fd97d5c3051acc2a4f251392a40b)
+        ;
+
+        
+    
+    
+            var circle_marker_f2bf3b58900a817820e6ee8e38f760ba = L.circleMarker(
+                [-22.9110137, -43.2093727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.0}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_327384b6d95ffd318575f7951518bdd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d319f392cb799cf5d8454639aba5c0e5 = $(`<div id="html_d319f392cb799cf5d8454639aba5c0e5" style="width: 100.0%; height: 100.0%;">Rio de Janeiro, Rio de Janeiro, Brazil</div>`)[0];
+                popup_327384b6d95ffd318575f7951518bdd6.setContent(html_d319f392cb799cf5d8454639aba5c0e5);
+            
+        
+
+        circle_marker_f2bf3b58900a817820e6ee8e38f760ba.bindPopup(popup_327384b6d95ffd318575f7951518bdd6)
+        ;
+
+        
+    
+    
+            var circle_marker_be7aca91e4fc2e8bb9f1b2f4b309b6eb = L.circleMarker(
+                [43.157285, -77.615214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_592b93bb174b058c5de465cd4ae56c2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab6de87f1c81da85c923902a4408f93 = $(`<div id="html_eab6de87f1c81da85c923902a4408f93" style="width: 100.0%; height: 100.0%;">Rochester, New York, USA</div>`)[0];
+                popup_592b93bb174b058c5de465cd4ae56c2e.setContent(html_eab6de87f1c81da85c923902a4408f93);
+            
+        
+
+        circle_marker_be7aca91e4fc2e8bb9f1b2f4b309b6eb.bindPopup(popup_592b93bb174b058c5de465cd4ae56c2e)
+        ;
+
+        
+    
+    
+            var circle_marker_0e7ddc916fea2a9bf268d4e2e944a7b8 = L.circleMarker(
+                [41.9941334, -87.8756737],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_919456ed1b0dca5c7b92d464ac2c070a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b031d0e0d3a6dcf20372a0df269aa94 = $(`<div id="html_4b031d0e0d3a6dcf20372a0df269aa94" style="width: 100.0%; height: 100.0%;">Rosemont, Illinois, USA</div>`)[0];
+                popup_919456ed1b0dca5c7b92d464ac2c070a.setContent(html_4b031d0e0d3a6dcf20372a0df269aa94);
+            
+        
+
+        circle_marker_0e7ddc916fea2a9bf268d4e2e944a7b8.bindPopup(popup_919456ed1b0dca5c7b92d464ac2c070a)
+        ;
+
+        
+    
+    
+            var circle_marker_e4a95252556127821e5c08f8893ec714 = L.circleMarker(
+                [51.9244424, 4.47775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_72a209d592dbfea800158400f569b753 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccbea14ffdb73a509aad70bdf4a93d0f = $(`<div id="html_ccbea14ffdb73a509aad70bdf4a93d0f" style="width: 100.0%; height: 100.0%;">Rotterdam, Zuid-Holland, Netherlands</div>`)[0];
+                popup_72a209d592dbfea800158400f569b753.setContent(html_ccbea14ffdb73a509aad70bdf4a93d0f);
+            
+        
+
+        circle_marker_e4a95252556127821e5c08f8893ec714.bindPopup(popup_72a209d592dbfea800158400f569b753)
+        ;
+
+        
+    
+    
+            var circle_marker_2ba1e434cb847d4b9e76a608d023fe5d = L.circleMarker(
+                [38.5810606, -121.493895],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_bb079f93f415541fb07023ce272df4bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0702bfe22836a10be912cc48e75ba3cd = $(`<div id="html_0702bfe22836a10be912cc48e75ba3cd" style="width: 100.0%; height: 100.0%;">Sacramento, California, USA</div>`)[0];
+                popup_bb079f93f415541fb07023ce272df4bb.setContent(html_0702bfe22836a10be912cc48e75ba3cd);
+            
+        
+
+        circle_marker_2ba1e434cb847d4b9e76a608d023fe5d.bindPopup(popup_bb079f93f415541fb07023ce272df4bb)
+        ;
+
+        
+    
+    
+            var circle_marker_7e1d75a4404452dbead073c497c22311 = L.circleMarker(
+                [59.938732, 30.316229],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_72e2a8d50259004e88f37eff23ee5055 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b82e86fa00327d4dab970095cbd1471 = $(`<div id="html_5b82e86fa00327d4dab970095cbd1471" style="width: 100.0%; height: 100.0%;">Saint Petersburg, Saint Petersburg, Russia</div>`)[0];
+                popup_72e2a8d50259004e88f37eff23ee5055.setContent(html_5b82e86fa00327d4dab970095cbd1471);
+            
+        
+
+        circle_marker_7e1d75a4404452dbead073c497c22311.bindPopup(popup_72e2a8d50259004e88f37eff23ee5055)
+        ;
+
+        
+    
+    
+            var circle_marker_776b3bf72c6378202a9643a61a174731 = L.circleMarker(
+                [35.9754168, 139.4160114],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.125, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.9}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_aa6ac0cb7b3914c8ba43c1e42646b915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c69d20868f854f0d6f8d8315a64e22c = $(`<div id="html_1c69d20868f854f0d6f8d8315a64e22c" style="width: 100.0%; height: 100.0%;">Saitama, Japan</div>`)[0];
+                popup_aa6ac0cb7b3914c8ba43c1e42646b915.setContent(html_1c69d20868f854f0d6f8d8315a64e22c);
+            
+        
+
+        circle_marker_776b3bf72c6378202a9643a61a174731.bindPopup(popup_aa6ac0cb7b3914c8ba43c1e42646b915)
+        ;
+
+        
+    
+    
+            var circle_marker_42f6ef8d288b1486232ec59df902f168 = L.circleMarker(
+                [35.8616402, 139.6457957],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_719837ae78b2cc9a2471016f13e94a08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6111052875fbda75eecab4d8a774ca = $(`<div id="html_0a6111052875fbda75eecab4d8a774ca" style="width: 100.0%; height: 100.0%;">Saitama, Saitama, Japan</div>`)[0];
+                popup_719837ae78b2cc9a2471016f13e94a08.setContent(html_0a6111052875fbda75eecab4d8a774ca);
+            
+        
+
+        circle_marker_42f6ef8d288b1486232ec59df902f168.bindPopup(popup_719837ae78b2cc9a2471016f13e94a08)
+        ;
+
+        
+    
+    
+            var circle_marker_a65075b7ca65ccd82f82dc4db587fc36 = L.circleMarker(
+                [40.7596198, -111.886797],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_693fcee95d1445b441e80e96520b326a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92929a386b58a964470add4cc05edf61 = $(`<div id="html_92929a386b58a964470add4cc05edf61" style="width: 100.0%; height: 100.0%;">Salt Lake City, Utah, USA</div>`)[0];
+                popup_693fcee95d1445b441e80e96520b326a.setContent(html_92929a386b58a964470add4cc05edf61);
+            
+        
+
+        circle_marker_a65075b7ca65ccd82f82dc4db587fc36.bindPopup(popup_693fcee95d1445b441e80e96520b326a)
+        ;
+
+        
+    
+    
+            var circle_marker_1c28932df3ea643a1a58b99518116007 = L.circleMarker(
+                [29.4246002, -98.4951405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c5d44c57cf71c42dc2bce38adb1bf9a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6d50d5db282722d121f1d03f27816ac = $(`<div id="html_a6d50d5db282722d121f1d03f27816ac" style="width: 100.0%; height: 100.0%;">San Antonio, Texas, USA</div>`)[0];
+                popup_c5d44c57cf71c42dc2bce38adb1bf9a0.setContent(html_a6d50d5db282722d121f1d03f27816ac);
+            
+        
+
+        circle_marker_1c28932df3ea643a1a58b99518116007.bindPopup(popup_c5d44c57cf71c42dc2bce38adb1bf9a0)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea9c6a7188e3d12695575072da2d13a = L.circleMarker(
+                [32.7174202, -117.1627728],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.775, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.62}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_e3fd5d41c96f8e978483776dd4ce635e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd298224eff4e9d88f7bb805f9d3d6f = $(`<div id="html_fdd298224eff4e9d88f7bb805f9d3d6f" style="width: 100.0%; height: 100.0%;">San Diego, California, USA</div>`)[0];
+                popup_e3fd5d41c96f8e978483776dd4ce635e.setContent(html_fdd298224eff4e9d88f7bb805f9d3d6f);
+            
+        
+
+        circle_marker_0ea9c6a7188e3d12695575072da2d13a.bindPopup(popup_e3fd5d41c96f8e978483776dd4ce635e)
+        ;
+
+        
+    
+    
+            var circle_marker_770b60c5133cb663faf5bb1d29283cdc = L.circleMarker(
+                [37.3361663, -121.890591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.175, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.94}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_b536405a3a01fd5372dea41eeaaebfe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11acbc530bf584376d91b368ebba0d46 = $(`<div id="html_11acbc530bf584376d91b368ebba0d46" style="width: 100.0%; height: 100.0%;">San Jose, California, USA</div>`)[0];
+                popup_b536405a3a01fd5372dea41eeaaebfe7.setContent(html_11acbc530bf584376d91b368ebba0d46);
+            
+        
+
+        circle_marker_770b60c5133cb663faf5bb1d29283cdc.bindPopup(popup_b536405a3a01fd5372dea41eeaaebfe7)
+        ;
+
+        
+    
+    
+            var circle_marker_03a380945d8a6c20ad192a0129011a87 = L.circleMarker(
+                [18.465299, -66.116666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.16}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_db3e9c9654e4702b8a99612a59597365 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1bdbdad75638102a059bbb14c5a50f5 = $(`<div id="html_c1bdbdad75638102a059bbb14c5a50f5" style="width: 100.0%; height: 100.0%;">San Juan, Puerto Rico</div>`)[0];
+                popup_db3e9c9654e4702b8a99612a59597365.setContent(html_c1bdbdad75638102a059bbb14c5a50f5);
+            
+        
+
+        circle_marker_03a380945d8a6c20ad192a0129011a87.bindPopup(popup_db3e9c9654e4702b8a99612a59597365)
+        ;
+
+        
+    
+    
+            var circle_marker_6bdd458dac76ec73cf7457b4fa337c7c = L.circleMarker(
+                [-33.4377756, -70.6504502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_77e0a298ab82e41c17bf9df87a7ff9fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f33a6cea0b4bde2d4f481b2b7053f5f1 = $(`<div id="html_f33a6cea0b4bde2d4f481b2b7053f5f1" style="width: 100.0%; height: 100.0%;">Santiago, Chile</div>`)[0];
+                popup_77e0a298ab82e41c17bf9df87a7ff9fb.setContent(html_f33a6cea0b4bde2d4f481b2b7053f5f1);
+            
+        
+
+        circle_marker_6bdd458dac76ec73cf7457b4fa337c7c.bindPopup(popup_77e0a298ab82e41c17bf9df87a7ff9fb)
+        ;
+
+        
+    
+    
+            var circle_marker_208c6fb484cb4bc98cf70b3b6f48bb6b = L.circleMarker(
+                [-23.5506507, -46.6333824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.6}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_62dae7ce6f29c7fad79fc881a565e00c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_053e7c8cdec73509dbf79baec40901dc = $(`<div id="html_053e7c8cdec73509dbf79baec40901dc" style="width: 100.0%; height: 100.0%;">Sao Paulo, Brazil</div>`)[0];
+                popup_62dae7ce6f29c7fad79fc881a565e00c.setContent(html_053e7c8cdec73509dbf79baec40901dc);
+            
+        
+
+        circle_marker_208c6fb484cb4bc98cf70b3b6f48bb6b.bindPopup(popup_62dae7ce6f29c7fad79fc881a565e00c)
+        ;
+
+        
+    
+    
+            var circle_marker_2bb705796bfa271e06bb5ca73237e6ec = L.circleMarker(
+                [-23.5506507, -46.6333824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.575, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_4e1e79dfa1cc3be2e4821b56f76cb604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97fcd38eecb6c53caa86589dcbe32920 = $(`<div id="html_97fcd38eecb6c53caa86589dcbe32920" style="width: 100.0%; height: 100.0%;">Sao Paulo, Sao Paulo, Brazil</div>`)[0];
+                popup_4e1e79dfa1cc3be2e4821b56f76cb604.setContent(html_97fcd38eecb6c53caa86589dcbe32920);
+            
+        
+
+        circle_marker_2bb705796bfa271e06bb5ca73237e6ec.bindPopup(popup_4e1e79dfa1cc3be2e4821b56f76cb604)
+        ;
+
+        
+    
+    
+            var circle_marker_859eef73f53b52141bd115339c5e14e6 = L.circleMarker(
+                [52.131802, -106.660767],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_dff9023ed2a013e138da1e0a973fe761 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cec4d4fcbcf6595eb460c11e3f4e3e7 = $(`<div id="html_9cec4d4fcbcf6595eb460c11e3f4e3e7" style="width: 100.0%; height: 100.0%;">Saskatoon, Saskatchewan, Canada</div>`)[0];
+                popup_dff9023ed2a013e138da1e0a973fe761.setContent(html_9cec4d4fcbcf6595eb460c11e3f4e3e7);
+            
+        
+
+        circle_marker_859eef73f53b52141bd115339c5e14e6.bindPopup(popup_dff9023ed2a013e138da1e0a973fe761)
+        ;
+
+        
+    
+    
+            var circle_marker_ebba5cec761f1703407c8f6e538ba93d = L.circleMarker(
+                [47.6038321, -122.330062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.875, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.7}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_a4ac6f23ccd56b23e0d94b88d8d07a7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f2f9a79d93f2a0373980c907177a589 = $(`<div id="html_5f2f9a79d93f2a0373980c907177a589" style="width: 100.0%; height: 100.0%;">Seattle, Washington, USA</div>`)[0];
+                popup_a4ac6f23ccd56b23e0d94b88d8d07a7e.setContent(html_5f2f9a79d93f2a0373980c907177a589);
+            
+        
+
+        circle_marker_ebba5cec761f1703407c8f6e538ba93d.bindPopup(popup_a4ac6f23ccd56b23e0d94b88d8d07a7e)
+        ;
+
+        
+    
+    
+            var circle_marker_af0d96b7578c12e405ca9d02200dcca5 = L.circleMarker(
+                [37.5666791, 126.9782914],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_0ff55936f5416e3ad510ee1f7ffe3506 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26309ffcddc8e7bb2e8d5170342de9b0 = $(`<div id="html_26309ffcddc8e7bb2e8d5170342de9b0" style="width: 100.0%; height: 100.0%;">Seoul, South Korea</div>`)[0];
+                popup_0ff55936f5416e3ad510ee1f7ffe3506.setContent(html_26309ffcddc8e7bb2e8d5170342de9b0);
+            
+        
+
+        circle_marker_af0d96b7578c12e405ca9d02200dcca5.bindPopup(popup_0ff55936f5416e3ad510ee1f7ffe3506)
+        ;
+
+        
+    
+    
+            var circle_marker_3c0acb05790db98710bf96158ccdb35f = L.circleMarker(
+                [40.1840602, 117.5932807],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_bfd1a978df143593026e5739af907967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f5df607660d09233963e8a24c41bb5 = $(`<div id="html_f2f5df607660d09233963e8a24c41bb5" style="width: 100.0%; height: 100.0%;">Shanghai, Hebei, China</div>`)[0];
+                popup_bfd1a978df143593026e5739af907967.setContent(html_f2f5df607660d09233963e8a24c41bb5);
+            
+        
+
+        circle_marker_3c0acb05790db98710bf96158ccdb35f.bindPopup(popup_bfd1a978df143593026e5739af907967)
+        ;
+
+        
+    
+    
+            var circle_marker_26d4bd7483099804e844651a07a9b749 = L.circleMarker(
+                [22.5445741, 114.0545429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_fedcb0a236bba8870af42b01b585bfd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aab8776732cdea69d6457edacb2daed2 = $(`<div id="html_aab8776732cdea69d6457edacb2daed2" style="width: 100.0%; height: 100.0%;">Shenzhen, Guangdong, China</div>`)[0];
+                popup_fedcb0a236bba8870af42b01b585bfd7.setContent(html_aab8776732cdea69d6457edacb2daed2);
+            
+        
+
+        circle_marker_26d4bd7483099804e844651a07a9b749.bindPopup(popup_fedcb0a236bba8870af42b01b585bfd7)
+        ;
+
+        
+    
+    
+            var circle_marker_79c35a2ac839dd1badccbc99cbd382de = L.circleMarker(
+                [1.357107, 103.8194992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ec8f26ccb00b7185ca8999dc1a48a48e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9b93700f290ca2e86d68be1f3c4a8d2 = $(`<div id="html_b9b93700f290ca2e86d68be1f3c4a8d2" style="width: 100.0%; height: 100.0%;">Singapore, Singapore</div>`)[0];
+                popup_ec8f26ccb00b7185ca8999dc1a48a48e.setContent(html_b9b93700f290ca2e86d68be1f3c4a8d2);
+            
+        
+
+        circle_marker_79c35a2ac839dd1badccbc99cbd382de.bindPopup(popup_ec8f26ccb00b7185ca8999dc1a48a48e)
+        ;
+
+        
+    
+    
+            var circle_marker_361940ddf0c455128cdc7d24e0fa0515 = L.circleMarker(
+                [43.5488256, -96.7307737],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ed3f37fca3e4fed1f727d4b980c78fb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba97bfdbcca500e41d10631055cbc560 = $(`<div id="html_ba97bfdbcca500e41d10631055cbc560" style="width: 100.0%; height: 100.0%;">Sioux Falls, South Dakota, USA</div>`)[0];
+                popup_ed3f37fca3e4fed1f727d4b980c78fb8.setContent(html_ba97bfdbcca500e41d10631055cbc560);
+            
+        
+
+        circle_marker_361940ddf0c455128cdc7d24e0fa0515.bindPopup(popup_ed3f37fca3e4fed1f727d4b980c78fb8)
+        ;
+
+        
+    
+    
+            var circle_marker_300beae4fe23e1d97f41d9cd16103b05 = L.circleMarker(
+                [38.6319657, -90.2428756],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.275, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.22}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d8c5b6983399b6048c22f9e5143d4c76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3f81d48a52b5ca5dfb673fbc79b6480 = $(`<div id="html_f3f81d48a52b5ca5dfb673fbc79b6480" style="width: 100.0%; height: 100.0%;">St. Louis, Missouri, USA</div>`)[0];
+                popup_d8c5b6983399b6048c22f9e5143d4c76.setContent(html_f3f81d48a52b5ca5dfb673fbc79b6480);
+            
+        
+
+        circle_marker_300beae4fe23e1d97f41d9cd16103b05.bindPopup(popup_d8c5b6983399b6048c22f9e5143d4c76)
+        ;
+
+        
+    
+    
+            var circle_marker_36b8d9cd4a345823a6ef761e72f240dd = L.circleMarker(
+                [59.3251172, 18.0710935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2f8f646887c10b70743a7fcc75e8ce65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab4201a2ad0d3426d4738241305d6b3 = $(`<div id="html_eab4201a2ad0d3426d4738241305d6b3" style="width: 100.0%; height: 100.0%;">Stockholm, Sweden</div>`)[0];
+                popup_2f8f646887c10b70743a7fcc75e8ce65.setContent(html_eab4201a2ad0d3426d4738241305d6b3);
+            
+        
+
+        circle_marker_36b8d9cd4a345823a6ef761e72f240dd.bindPopup(popup_2f8f646887c10b70743a7fcc75e8ce65)
+        ;
+
+        
+    
+    
+            var circle_marker_52507cf9b7dfdec283f30d3daf6719e9 = L.circleMarker(
+                [26.1666888, -80.2787573],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.625, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.5}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_1b5850e8e0f5c0683c63273615d4b74e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc095aede59f1cfae6f93b28b9992ea1 = $(`<div id="html_dc095aede59f1cfae6f93b28b9992ea1" style="width: 100.0%; height: 100.0%;">Sunrise, Florida, USA</div>`)[0];
+                popup_1b5850e8e0f5c0683c63273615d4b74e.setContent(html_dc095aede59f1cfae6f93b28b9992ea1);
+            
+        
+
+        circle_marker_52507cf9b7dfdec283f30d3daf6719e9.bindPopup(popup_1b5850e8e0f5c0683c63273615d4b74e)
+        ;
+
+        
+    
+    
+            var circle_marker_18ade5d0c1c0dfe2b9eaeb8dc30bd3a9 = L.circleMarker(
+                [-33.8698439, 151.2082848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.12}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_eab4b9deed9c0bb0118b4aec5e5c8be3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f09990a6d79525d93844360df61c9dbd = $(`<div id="html_f09990a6d79525d93844360df61c9dbd" style="width: 100.0%; height: 100.0%;">Sydney, New South Wales, Australia</div>`)[0];
+                popup_eab4b9deed9c0bb0118b4aec5e5c8be3.setContent(html_f09990a6d79525d93844360df61c9dbd);
+            
+        
+
+        circle_marker_18ade5d0c1c0dfe2b9eaeb8dc30bd3a9.bindPopup(popup_eab4b9deed9c0bb0118b4aec5e5c8be3)
+        ;
+
+        
+    
+    
+            var circle_marker_ba0d6b3f502d96c9fd1ddec4121b299a = L.circleMarker(
+                [27.9477595, -82.458444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.875, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.7}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_bb6473365ae231ea5476442def1239da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebcb7e5704c1521d1f98d04691a1a8a5 = $(`<div id="html_ebcb7e5704c1521d1f98d04691a1a8a5" style="width: 100.0%; height: 100.0%;">Tampa, Florida, USA</div>`)[0];
+                popup_bb6473365ae231ea5476442def1239da.setContent(html_ebcb7e5704c1521d1f98d04691a1a8a5);
+            
+        
+
+        circle_marker_ba0d6b3f502d96c9fd1ddec4121b299a.bindPopup(popup_bb6473365ae231ea5476442def1239da)
+        ;
+
+        
+    
+    
+            var circle_marker_2f5fac8c42b0fd883eebf5da0b7716c2 = L.circleMarker(
+                [35.6812665, 139.757653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_d4b702eb92c5043582bd2c9eb5e8952e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c60539998c9439d70d39d95550597d16 = $(`<div id="html_c60539998c9439d70d39d95550597d16" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>`)[0];
+                popup_d4b702eb92c5043582bd2c9eb5e8952e.setContent(html_c60539998c9439d70d39d95550597d16);
+            
+        
+
+        circle_marker_2f5fac8c42b0fd883eebf5da0b7716c2.bindPopup(popup_d4b702eb92c5043582bd2c9eb5e8952e)
+        ;
+
+        
+    
+    
+            var circle_marker_864c0a8fe799c0991b632c5a93b33aeb = L.circleMarker(
+                [43.6534817, -79.3839347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.48}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_0078b5055811d6c00509d7c8ec8fcb67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3808648899878fbfb7b10861b0e2c99e = $(`<div id="html_3808648899878fbfb7b10861b0e2c99e" style="width: 100.0%; height: 100.0%;">Toronto, Ontario, Canada</div>`)[0];
+                popup_0078b5055811d6c00509d7c8ec8fcb67.setContent(html_3808648899878fbfb7b10861b0e2c99e);
+            
+        
+
+        circle_marker_864c0a8fe799c0991b632c5a93b33aeb.bindPopup(popup_0078b5055811d6c00509d7c8ec8fcb67)
+        ;
+
+        
+    
+    
+            var circle_marker_0780cd47fe656bf6843c77bcf645bb3b = L.circleMarker(
+                [36.1563122, -95.9927516],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.475, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.38}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_b9bf5832bb1be3f96a835f32671006f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00510f7808f82fe4301e4f667c82ab78 = $(`<div id="html_00510f7808f82fe4301e4f667c82ab78" style="width: 100.0%; height: 100.0%;">Tulsa, Oklahoma, USA</div>`)[0];
+                popup_b9bf5832bb1be3f96a835f32671006f7.setContent(html_00510f7808f82fe4301e4f667c82ab78);
+            
+        
+
+        circle_marker_0780cd47fe656bf6843c77bcf645bb3b.bindPopup(popup_b9bf5832bb1be3f96a835f32671006f7)
+        ;
+
+        
+    
+    
+            var circle_marker_11815393a65b1306e9497121a3445547 = L.circleMarker(
+                [-18.9188041, -48.2767837],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.2}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_760dcf54716aab548e83065a2e411cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e32f9a7383ef3b140e425d2254b84f = $(`<div id="html_f3e32f9a7383ef3b140e425d2254b84f" style="width: 100.0%; height: 100.0%;">Uberlandia, Minas Gerais, Brazil</div>`)[0];
+                popup_760dcf54716aab548e83065a2e411cc2.setContent(html_f3e32f9a7383ef3b140e425d2254b84f);
+            
+        
+
+        circle_marker_11815393a65b1306e9497121a3445547.bindPopup(popup_760dcf54716aab548e83065a2e411cc2)
+        ;
+
+        
+    
+    
+            var circle_marker_8d18766efd0fc48e85b94ff3dcd8b187 = L.circleMarker(
+                [41.4345426, -72.1097996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.64}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_9bc0520514a1445f30ec3489289d02e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_062f7ae95e8c0db379a52081cab6d739 = $(`<div id="html_062f7ae95e8c0db379a52081cab6d739" style="width: 100.0%; height: 100.0%;">Uncasville, Connecticut, USA</div>`)[0];
+                popup_9bc0520514a1445f30ec3489289d02e2.setContent(html_062f7ae95e8c0db379a52081cab6d739);
+            
+        
+
+        circle_marker_8d18766efd0fc48e85b94ff3dcd8b187.bindPopup(popup_9bc0520514a1445f30ec3489289d02e2)
+        ;
+
+        
+    
+    
+            var circle_marker_9218690f6ba886f4cc79678081050c13 = L.circleMarker(
+                [40.7095827, -73.592341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_cc2e2039677b5209e1618f6c6ce0d34f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_794a01bf7e2b09b95181a3bce65607ae = $(`<div id="html_794a01bf7e2b09b95181a3bce65607ae" style="width: 100.0%; height: 100.0%;">Uniondale, New York, USA</div>`)[0];
+                popup_cc2e2039677b5209e1618f6c6ce0d34f.setContent(html_794a01bf7e2b09b95181a3bce65607ae);
+            
+        
+
+        circle_marker_9218690f6ba886f4cc79678081050c13.bindPopup(popup_cc2e2039677b5209e1618f6c6ce0d34f)
+        ;
+
+        
+    
+    
+            var circle_marker_c49b8e36a83decce2a00b2626ffafaf5 = L.circleMarker(
+                [43.1009031, -75.2326641],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.24}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_634fea7e74e95feb39f8bea095d73639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08c775d47a8df6fab975b564c4f711d0 = $(`<div id="html_08c775d47a8df6fab975b564c4f711d0" style="width: 100.0%; height: 100.0%;">Utica, New York, USA</div>`)[0];
+                popup_634fea7e74e95feb39f8bea095d73639.setContent(html_08c775d47a8df6fab975b564c4f711d0);
+            
+        
+
+        circle_marker_c49b8e36a83decce2a00b2626ffafaf5.bindPopup(popup_634fea7e74e95feb39f8bea095d73639)
+        ;
+
+        
+    
+    
+            var circle_marker_96cc8256a1acaa2601cec6f88523ae15 = L.circleMarker(
+                [49.2608724, -123.113952],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1.12}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_c48c8e179d680f63b3f1f801c68e3fbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_153d45aeaf30d71f3727d0564ce06de6 = $(`<div id="html_153d45aeaf30d71f3727d0564ce06de6" style="width: 100.0%; height: 100.0%;">Vancouver, British Columbia, Canada</div>`)[0];
+                popup_c48c8e179d680f63b3f1f801c68e3fbf.setContent(html_153d45aeaf30d71f3727d0564ce06de6);
+            
+        
+
+        circle_marker_96cc8256a1acaa2601cec6f88523ae15.bindPopup(popup_c48c8e179d680f63b3f1f801c68e3fbf)
+        ;
+
+        
+    
+    
+            var circle_marker_3188360a399867dd02ccab8ed3086cec = L.circleMarker(
+                [38.8950368, -77.0365427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_8320b2458c41523a7871eafd1b992865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6471c855bbe690eb001a8ef16256eaf9 = $(`<div id="html_6471c855bbe690eb001a8ef16256eaf9" style="width: 100.0%; height: 100.0%;">Washington, DC, USA</div>`)[0];
+                popup_8320b2458c41523a7871eafd1b992865.setContent(html_6471c855bbe690eb001a8ef16256eaf9);
+            
+        
+
+        circle_marker_3188360a399867dd02ccab8ed3086cec.bindPopup(popup_8320b2458c41523a7871eafd1b992865)
+        ;
+
+        
+    
+    
+            var circle_marker_d1849c419c996bd3f032d991912721dc = L.circleMarker(
+                [37.6922361, -97.3375448],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_72b68964933ff868df82633d0e90b8c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_640b1b8eeb7a1e0701d86fa4e4199b1b = $(`<div id="html_640b1b8eeb7a1e0701d86fa4e4199b1b" style="width: 100.0%; height: 100.0%;">Wichita, Kansas, USA</div>`)[0];
+                popup_72b68964933ff868df82633d0e90b8c0.setContent(html_640b1b8eeb7a1e0701d86fa4e4199b1b);
+            
+        
+
+        circle_marker_d1849c419c996bd3f032d991912721dc.bindPopup(popup_72b68964933ff868df82633d0e90b8c0)
+        ;
+
+        
+    
+    
+            var circle_marker_e606ae00304f7a5390ca37337d79cbb2 = L.circleMarker(
+                [49.8955367, -97.1384584],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.44}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_2cefccf26675636b27370a8e4d7db002 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9e1734b3abf707e54f053fbe403c364 = $(`<div id="html_c9e1734b3abf707e54f053fbe403c364" style="width: 100.0%; height: 100.0%;">Winnipeg, Manitoba, Canada</div>`)[0];
+                popup_2cefccf26675636b27370a8e4d7db002.setContent(html_c9e1734b3abf707e54f053fbe403c364);
+            
+        
+
+        circle_marker_e606ae00304f7a5390ca37337d79cbb2.bindPopup(popup_2cefccf26675636b27370a8e4d7db002)
+        ;
+
+        
+    
+    
+            var circle_marker_fd55285f060e2dbc11add55b3a7448bd = L.circleMarker(
+                [35.444991, 139.636768],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.175, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.14}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_b3db252cdebc9471c309be09e8353071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1f716de3a60152c43c9dc23b48db7cb = $(`<div id="html_b1f716de3a60152c43c9dc23b48db7cb" style="width: 100.0%; height: 100.0%;">Yokohama, Kanagawa, Japan</div>`)[0];
+                popup_b3db252cdebc9471c309be09e8353071.setContent(html_b1f716de3a60152c43c9dc23b48db7cb);
+            
+        
+
+        circle_marker_fd55285f060e2dbc11add55b3a7448bd.bindPopup(popup_b3db252cdebc9471c309be09e8353071)
+        ;
+
+        
+    
+    
+            var circle_marker_a728a829753a0d8258042a6f8f3ed9c8 = L.circleMarker(
+                [45.84264135, 15.962231476593626],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 0.26}
+            ).addTo(map_7cd9ccf632ef2b3e42812cc80a5360ed);
+        
+    
+        var popup_ff672a913ef441f1c45ac315b346adfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96f507a9c4970da04d3cd7bfb432ae6d = $(`<div id="html_96f507a9c4970da04d3cd7bfb432ae6d" style="width: 100.0%; height: 100.0%;">Zagreb, Croatia</div>`)[0];
+                popup_ff672a913ef441f1c45ac315b346adfa.setContent(html_96f507a9c4970da04d3cd7bfb432ae6d);
+            
+        
+
+        circle_marker_a728a829753a0d8258042a6f8f3ed9c8.bindPopup(popup_ff672a913ef441f1c45ac315b346adfa)
+        ;
+
+        
+    
+    
+            map_7cd9ccf632ef2b3e42812cc80a5360ed.fitBounds(
+                [[-37.8142176, -123.113952], [59.938732, 174.7631803]],
+                {}
+            );
+        
+</script>
+</html>
